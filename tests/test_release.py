@@ -12,7 +12,7 @@ from ml.ingestion.race_results import normalize,load
 from ml.ingestion.openf1_sessions import match_session
 from ml.live.baselines import attach
 from ml.live.reportcards import race_card,overall
-from ml.live.operations import inspect
+from ml.live.operations import inspect,save_model_check
 from scripts.backup import backup,restore,verify
 
 UTC=timezone.utc
@@ -100,5 +100,20 @@ class ReleaseTests(unittest.TestCase):
             row=db.get(SystemState,'refresh'); row.payload={'status':'ok','last_attempt':NOW.isoformat(),'interval_seconds':300}; db.commit()
             self.assertTrue(inspect(db,NOW,models=False)['ready'])
         e.dispose()
+
+    def test_hosted_readiness_uses_worker_verification_for_current_release(self):
+        engine = create_engine('sqlite:///:memory:')
+        Base.metadata.create_all(engine)
+        with Session(engine) as db, patch.dict('os.environ', {'FASTLANE_WORKER_MODEL_CHECK': 'current'}):
+            db.add(SystemState(key='refresh', payload={'status': 'ok', 'last_attempt': NOW.isoformat()}))
+            db.commit()
+            with patch('ml.live.operations.verify_models') as verify_bundle:
+                save_model_check(db, 'older')
+                self.assertFalse(inspect(db, NOW)['ready'])
+                save_model_check(db, 'current')
+                self.assertTrue(inspect(db, NOW)['ready'])
+                self.assertEqual(verify_bundle.call_count, 2)
+        engine.dispose()
+
 
 if __name__=='__main__': unittest.main()

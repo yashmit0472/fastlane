@@ -3,6 +3,7 @@ set -euo pipefail
 
 : "${DATABASE_URL:?Set DATABASE_URL to the PostgreSQL connection URL}"
 export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
+export FASTLANE_WORKER_MODEL_CHECK="${RENDER_GIT_COMMIT:-$(date +%s)}"
 
 python -c 'from apps.api.database import initialize; initialize()'
 

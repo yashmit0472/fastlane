@@ -585,6 +585,11 @@ def main():
     logging.basicConfig(level=logging.INFO,format="%(asctime)s %(levelname)s %(message)s")
     # Pin the evaluated artifact for the lifetime of this worker; training never occurs here.
     model_path,_=choose_model(args.model_report or os.getenv("MODEL_REPORT_PATH"))
+    release = os.getenv('FASTLANE_WORKER_MODEL_CHECK')
+    if release:
+        from ml.live.operations import save_model_check
+        with SessionLocal() as db:
+            save_model_check(db, release)
     while True:
         try:
             with worker_lock():
