@@ -1,0 +1,92 @@
+name: fastlane
+x-runtime: &runtime
+  build:
+    context: .
+    dockerfile: apps/api/Dockerfile
+    target: runtime
+  image: fastlane-runtime:local
+  restart: unless-stopped
+  environment: &runtime-env
+    DATABASE_URL: postgresql+psycopg://fastlane:${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}@postgres:5432/fastlane
+    APP_ENV: production
+    CORS_ORIGINS: ${CORS_ORIGINS:-http://127.0.0.1:3000,http://localhost:3000}
+    REFRESH_INTERVAL_SECONDS: 300
+  volumes:
+    - ./ml/artifacts:/app/ml/artifacts:ro
+    - ./data/processed:/app/data/processed:ro
+    - runtime_data:/app/data
+  depends_on:
+    postgres:
+      condition: service_healthy
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: fastlane
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}
+      POSTGRES_DB: fastlane
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fastlane -d fastlane"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+    # No host database port: only app containers access PostgreSQL.
+  api:
+    <<: *runtime
+    ports:
+      - "127.0.0.1:${API_PORT:-8000}:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5)"]
+      interval: 20s
+      timeout: 10s
+      start_period: 30s
+      retries: 5
+  worker:
+    <<: *runtime
+    command: ["python", "-m", "ml.live.refresh", "--loop"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-m", "scripts.healthcheck"]
+      interval: 60s
+      timeout: 30s
+      start_period: 180s
+      retries: 3
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    restart: unless-stopped
+    environment:
+      API_BASE_URL: http://api:8000
+    ports:
+      - "127.0.0.1:${WEB_PORT:-3000}:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 15s
+      start_period: 45s
+      retries: 3
+  training:
+    <<: *runtime
+    profiles: ["training"]
+    restart: "no"
+    command: ["python", "-m", "scripts.training_check"]
+    volumes:
+      - ./ml/artifacts:/app/ml/artifacts
+      - ./data/processed:/app/data/processed
+      - runtime_data:/app/data
+      - ./docs:/app/docs
+volumes:
+  postgres_data:
+  runtime_data:

@@ -1,0 +1,2156 @@
+[
+  {
+    "race_id": "2025-01",
+    "driver_id": "norris",
+    "probability": 0.031631866227033484,
+    "target": 1
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "max_verstappen",
+    "probability": 0.32237518073979315,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "russell",
+    "probability": 0.06871256999033043,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "antonelli",
+    "probability": 0.02209396113029722,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "albon",
+    "probability": 0.00474209300751493,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "stroll",
+    "probability": 0.006901448193423385,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "hulkenberg",
+    "probability": 0.011980293542338916,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "leclerc",
+    "probability": 0.1390189742364582,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "piastri",
+    "probability": 0.024152777540855663,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "hamilton",
+    "probability": 0.2122770091963271,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "gasly",
+    "probability": 0.024613577002417647,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "tsunoda",
+    "probability": 0.01175666880983161,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "ocon",
+    "probability": 0.01494565468330194,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "bearman",
+    "probability": 0.01364380432448585,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "lawson",
+    "probability": 0.039392214423605375,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "bortoleto",
+    "probability": 0.004855363642954588,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "alonso",
+    "probability": 0.009616058514139485,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "sainz",
+    "probability": 0.016215224315846606,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "doohan",
+    "probability": 0.015484551054943415,
+    "target": 0
+  },
+  {
+    "race_id": "2025-01",
+    "driver_id": "hadjar",
+    "probability": 0.0055907094241010044,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "max_verstappen",
+    "probability": 0.2773985182146566,
+    "target": 1
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "norris",
+    "probability": 0.06876794897921203,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "piastri",
+    "probability": 0.05320867553509347,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "leclerc",
+    "probability": 0.08755714598363042,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "russell",
+    "probability": 0.08304932402491805,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "antonelli",
+    "probability": 0.08343116503392495,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "hamilton",
+    "probability": 0.14727317698740874,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "hadjar",
+    "probability": 0.01107492800804998,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "albon",
+    "probability": 0.009189945460199928,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "bearman",
+    "probability": 0.01594233972459814,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "alonso",
+    "probability": 0.012206817288988477,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "tsunoda",
+    "probability": 0.03875880158125739,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "gasly",
+    "probability": 0.015278092716894965,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "sainz",
+    "probability": 0.017089757170888262,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "doohan",
+    "probability": 0.01086682755545,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "hulkenberg",
+    "probability": 0.015179716190637476,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "lawson",
+    "probability": 0.01117253751367045,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "ocon",
+    "probability": 0.02081813361650846,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "bortoleto",
+    "probability": 0.01133416444588663,
+    "target": 0
+  },
+  {
+    "race_id": "2025-03",
+    "driver_id": "stroll",
+    "probability": 0.010401983968125653,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "piastri",
+    "probability": 0.05994171318049209,
+    "target": 1
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "russell",
+    "probability": 0.04976889439689769,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "norris",
+    "probability": 0.07709468967129351,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "leclerc",
+    "probability": 0.07632497931161597,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "hamilton",
+    "probability": 0.12128413101652782,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "max_verstappen",
+    "probability": 0.35587407028048884,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "gasly",
+    "probability": 0.01760849035367335,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "ocon",
+    "probability": 0.015639137024376838,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "tsunoda",
+    "probability": 0.044206361062578726,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "bearman",
+    "probability": 0.013667010494121385,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "antonelli",
+    "probability": 0.06359614168803059,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "albon",
+    "probability": 0.011041737209020111,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "hadjar",
+    "probability": 0.012019572397889425,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "doohan",
+    "probability": 0.011670019529948873,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "alonso",
+    "probability": 0.011338321292269379,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "lawson",
+    "probability": 0.01070697334509937,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "stroll",
+    "probability": 0.009035319813258577,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "bortoleto",
+    "probability": 0.00966958431829097,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "sainz",
+    "probability": 0.016595962432134483,
+    "target": 0
+  },
+  {
+    "race_id": "2025-04",
+    "driver_id": "hulkenberg",
+    "probability": 0.012916891181992346,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "piastri",
+    "probability": 0.09638528671620522,
+    "target": 1
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "max_verstappen",
+    "probability": 0.27703859945615816,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "leclerc",
+    "probability": 0.07857684238401001,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "norris",
+    "probability": 0.10395781522882143,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "russell",
+    "probability": 0.05557477832579118,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "antonelli",
+    "probability": 0.0642784733037206,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "hamilton",
+    "probability": 0.1353433451893917,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "sainz",
+    "probability": 0.015114126555556282,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "albon",
+    "probability": 0.011799917935600623,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "hadjar",
+    "probability": 0.01174579042341757,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "alonso",
+    "probability": 0.009538947076697158,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "lawson",
+    "probability": 0.01035152028383731,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "bearman",
+    "probability": 0.014858016862018264,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "ocon",
+    "probability": 0.018669423892071504,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "hulkenberg",
+    "probability": 0.009952216109482626,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "stroll",
+    "probability": 0.008514732537626002,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "doohan",
+    "probability": 0.012425406060705718,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "bortoleto",
+    "probability": 0.007496321015867609,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "tsunoda",
+    "probability": 0.04009609425391827,
+    "target": 0
+  },
+  {
+    "race_id": "2025-05",
+    "driver_id": "gasly",
+    "probability": 0.01828234638910278,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "max_verstappen",
+    "probability": 0.2820481955111635,
+    "target": 1
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "norris",
+    "probability": 0.06824995417900366,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "piastri",
+    "probability": 0.18305846485686905,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "hamilton",
+    "probability": 0.11822468044245127,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "albon",
+    "probability": 0.014389936235936528,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "leclerc",
+    "probability": 0.07004726920297849,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "russell",
+    "probability": 0.049031360088158955,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "sainz",
+    "probability": 0.018599571955938487,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "hadjar",
+    "probability": 0.013804596177629752,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "tsunoda",
+    "probability": 0.039364225727318576,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "alonso",
+    "probability": 0.007764971863630951,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "hulkenberg",
+    "probability": 0.007064463550173292,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "gasly",
+    "probability": 0.01177643679613202,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "lawson",
+    "probability": 0.011201855836297708,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "stroll",
+    "probability": 0.006056279191205812,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "colapinto",
+    "probability": 0.008869852807950936,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "bearman",
+    "probability": 0.01193430438990018,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "bortoleto",
+    "probability": 0.005875179772201013,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "antonelli",
+    "probability": 0.055553875969316595,
+    "target": 0
+  },
+  {
+    "race_id": "2025-07",
+    "driver_id": "ocon",
+    "probability": 0.017084525445743442,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "norris",
+    "probability": 0.0516420002638554,
+    "target": 1
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "leclerc",
+    "probability": 0.09740949345833631,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "piastri",
+    "probability": 0.11215131589980464,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "max_verstappen",
+    "probability": 0.34328779045374214,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "hamilton",
+    "probability": 0.16405366569349256,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "hadjar",
+    "probability": 0.013286044287462346,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "ocon",
+    "probability": 0.010061524144213792,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "lawson",
+    "probability": 0.010353947976425379,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "albon",
+    "probability": 0.013934812590846765,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "sainz",
+    "probability": 0.017985151993619032,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "russell",
+    "probability": 0.03383181618914482,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "bearman",
+    "probability": 0.007470751481521626,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "colapinto",
+    "probability": 0.008049407724652673,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "bortoleto",
+    "probability": 0.005078006160506053,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "stroll",
+    "probability": 0.0051354463863019775,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "hulkenberg",
+    "probability": 0.006525317221851266,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "tsunoda",
+    "probability": 0.045283057786201376,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "antonelli",
+    "probability": 0.03509292613402714,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "alonso",
+    "probability": 0.007433779430784878,
+    "target": 0
+  },
+  {
+    "race_id": "2025-08",
+    "driver_id": "gasly",
+    "probability": 0.011933744723209854,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "piastri",
+    "probability": 0.13876990754277302,
+    "target": 1
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "norris",
+    "probability": 0.08181127154983897,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "leclerc",
+    "probability": 0.10826179553435679,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "russell",
+    "probability": 0.027142090825806698,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "hulkenberg",
+    "probability": 0.007415452473704655,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "hamilton",
+    "probability": 0.18614948078144103,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "hadjar",
+    "probability": 0.016503666371008884,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "gasly",
+    "probability": 0.01125067760191098,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "alonso",
+    "probability": 0.007097180910447873,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "max_verstappen",
+    "probability": 0.26468159586130774,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "lawson",
+    "probability": 0.013808121215936272,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "bortoleto",
+    "probability": 0.0060709099144860374,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "tsunoda",
+    "probability": 0.03765640640793929,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "sainz",
+    "probability": 0.02079337620199841,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "colapinto",
+    "probability": 0.00848522330442217,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "ocon",
+    "probability": 0.013385208498029409,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "bearman",
+    "probability": 0.008719549333140012,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "antonelli",
+    "probability": 0.02652388737886709,
+    "target": 0
+  },
+  {
+    "race_id": "2025-09",
+    "driver_id": "albon",
+    "probability": 0.015474198292584678,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "russell",
+    "probability": 0.025037058310733943,
+    "target": 1
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "max_verstappen",
+    "probability": 0.2485757167933117,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "antonelli",
+    "probability": 0.023241874994888223,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "piastri",
+    "probability": 0.13668067522032057,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "leclerc",
+    "probability": 0.11336905368532707,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "hamilton",
+    "probability": 0.19583173896099315,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "alonso",
+    "probability": 0.008370879267519211,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "hulkenberg",
+    "probability": 0.011076130388252748,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "ocon",
+    "probability": 0.010443927251644244,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "sainz",
+    "probability": 0.021761661844817617,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "bearman",
+    "probability": 0.006863354301677705,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "tsunoda",
+    "probability": 0.033413296805519625,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "colapinto",
+    "probability": 0.008246556617627219,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "bortoleto",
+    "probability": 0.00827889442276932,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "gasly",
+    "probability": 0.010945027507734212,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "hadjar",
+    "probability": 0.020046147654309107,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "stroll",
+    "probability": 0.0062492467497321305,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "norris",
+    "probability": 0.08062488338174537,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "lawson",
+    "probability": 0.016603920841855815,
+    "target": 0
+  },
+  {
+    "race_id": "2025-10",
+    "driver_id": "albon",
+    "probability": 0.014339954999221041,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "norris",
+    "probability": 0.05801786085564313,
+    "target": 1
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "piastri",
+    "probability": 0.08860839932084166,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "leclerc",
+    "probability": 0.11758730102222935,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "hamilton",
+    "probability": 0.1980287693471371,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "russell",
+    "probability": 0.041816401801164416,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "lawson",
+    "probability": 0.014290747282543646,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "alonso",
+    "probability": 0.009692909622348875,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "bortoleto",
+    "probability": 0.010469035168599143,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "hulkenberg",
+    "probability": 0.014444848363321963,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "ocon",
+    "probability": 0.012803393218087954,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "bearman",
+    "probability": 0.00817676452549655,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "hadjar",
+    "probability": 0.01742999993570368,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "gasly",
+    "probability": 0.013738149451909815,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "stroll",
+    "probability": 0.006988140154614717,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "colapinto",
+    "probability": 0.010474565634741796,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "tsunoda",
+    "probability": 0.04094011334364297,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "albon",
+    "probability": 0.011824894715495799,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "max_verstappen",
+    "probability": 0.27477121549748434,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "antonelli",
+    "probability": 0.03024278288335789,
+    "target": 0
+  },
+  {
+    "race_id": "2025-11",
+    "driver_id": "sainz",
+    "probability": 0.019653707855635222,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "norris",
+    "probability": 0.07565514725986672,
+    "target": 1
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "piastri",
+    "probability": 0.07221816639165836,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "hulkenberg",
+    "probability": 0.01892140310940204,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "hamilton",
+    "probability": 0.23987088440053442,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "max_verstappen",
+    "probability": 0.21618452865925702,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "gasly",
+    "probability": 0.015186320433562417,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "stroll",
+    "probability": 0.008458893820077917,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "albon",
+    "probability": 0.008404873891704714,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "alonso",
+    "probability": 0.012631111871632144,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "russell",
+    "probability": 0.03537838835347346,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "bearman",
+    "probability": 0.010390281250143187,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "sainz",
+    "probability": 0.014270127834973594,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "ocon",
+    "probability": 0.01531466321946732,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "leclerc",
+    "probability": 0.135619059185354,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "tsunoda",
+    "probability": 0.03292149742250036,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "antonelli",
+    "probability": 0.02311969840654824,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "hadjar",
+    "probability": 0.020231629624821463,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "bortoleto",
+    "probability": 0.014445225058924573,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "lawson",
+    "probability": 0.018725492336050108,
+    "target": 0
+  },
+  {
+    "race_id": "2025-12",
+    "driver_id": "colapinto",
+    "probability": 0.01205260747004804,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "norris",
+    "probability": 0.09041422256765841,
+    "target": 1
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "piastri",
+    "probability": 0.11287975313810014,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "russell",
+    "probability": 0.04521760650886469,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "leclerc",
+    "probability": 0.12101824245330473,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "alonso",
+    "probability": 0.01652376437861012,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "bortoleto",
+    "probability": 0.020180356670626502,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "stroll",
+    "probability": 0.011942139248276458,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "lawson",
+    "probability": 0.014068729084108054,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "max_verstappen",
+    "probability": 0.15485479520142312,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "antonelli",
+    "probability": 0.03018218194553016,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "hadjar",
+    "probability": 0.012800644532598698,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "hamilton",
+    "probability": 0.22868532306827827,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "hulkenberg",
+    "probability": 0.028645619593252517,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "sainz",
+    "probability": 0.011758320906550827,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "albon",
+    "probability": 0.007897940497174146,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "ocon",
+    "probability": 0.017743240845611852,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "tsunoda",
+    "probability": 0.02945842659468854,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "colapinto",
+    "probability": 0.0123646014535915,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "gasly",
+    "probability": 0.020471015165887146,
+    "target": 0
+  },
+  {
+    "race_id": "2025-14",
+    "driver_id": "bearman",
+    "probability": 0.012893076145864102,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "piastri",
+    "probability": 0.09444022085587694,
+    "target": 1
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "max_verstappen",
+    "probability": 0.15234843048559915,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "hadjar",
+    "probability": 0.012594958400137928,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "russell",
+    "probability": 0.05567926782132521,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "albon",
+    "probability": 0.008851141827565648,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "bearman",
+    "probability": 0.012454403512025099,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "stroll",
+    "probability": 0.014732562743844553,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "alonso",
+    "probability": 0.019612558634232488,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "tsunoda",
+    "probability": 0.026766079055646447,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "ocon",
+    "probability": 0.017477206229382793,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "colapinto",
+    "probability": 0.01090183645491295,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "lawson",
+    "probability": 0.014844425654921296,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "sainz",
+    "probability": 0.012668270270158015,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "hulkenberg",
+    "probability": 0.026489262078287425,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "bortoleto",
+    "probability": 0.021408758788826466,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "antonelli",
+    "probability": 0.03988642130184371,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "gasly",
+    "probability": 0.01667503448931565,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "norris",
+    "probability": 0.12407801676182696,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "leclerc",
+    "probability": 0.11650601833275027,
+    "target": 0
+  },
+  {
+    "race_id": "2025-15",
+    "driver_id": "hamilton",
+    "probability": 0.20158512630152095,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "max_verstappen",
+    "probability": 0.17212874216152338,
+    "target": 1
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "norris",
+    "probability": 0.1509457391167323,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "piastri",
+    "probability": 0.1498618070983485,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "leclerc",
+    "probability": 0.07828000710573282,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "russell",
+    "probability": 0.03142811919172246,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "hamilton",
+    "probability": 0.1401816905471422,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "albon",
+    "probability": 0.012673354849765164,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "bortoleto",
+    "probability": 0.021041670195119856,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "antonelli",
+    "probability": 0.02561619991502379,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "hadjar",
+    "probability": 0.01919962994134434,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "sainz",
+    "probability": 0.015090684217442382,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "bearman",
+    "probability": 0.014636318057488159,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "tsunoda",
+    "probability": 0.03207398961681833,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "lawson",
+    "probability": 0.02129291475452481,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "ocon",
+    "probability": 0.019297183028070545,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "gasly",
+    "probability": 0.017528354519760325,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "colapinto",
+    "probability": 0.011791990631666452,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "stroll",
+    "probability": 0.019155862991426183,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "alonso",
+    "probability": 0.023107963127959718,
+    "target": 0
+  },
+  {
+    "race_id": "2025-16",
+    "driver_id": "hulkenberg",
+    "probability": 0.024667778932388293,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "max_verstappen",
+    "probability": 0.2948342461025807,
+    "target": 1
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "russell",
+    "probability": 0.03259574583045941,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "sainz",
+    "probability": 0.018904732992226093,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "antonelli",
+    "probability": 0.029376175140293424,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "lawson",
+    "probability": 0.016925305798315266,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "tsunoda",
+    "probability": 0.04167507762358923,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "norris",
+    "probability": 0.09756393485454003,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "hamilton",
+    "probability": 0.12476026305572355,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "leclerc",
+    "probability": 0.07017347552445968,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "hadjar",
+    "probability": 0.016867591982102918,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "bortoleto",
+    "probability": 0.016987873081317443,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "bearman",
+    "probability": 0.012451887703500215,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "albon",
+    "probability": 0.01603191173378949,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "ocon",
+    "probability": 0.01579459500965817,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "alonso",
+    "probability": 0.015510167782769426,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "hulkenberg",
+    "probability": 0.017851173641083302,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "stroll",
+    "probability": 0.01411615323925427,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "gasly",
+    "probability": 0.014635478377553085,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "colapinto",
+    "probability": 0.010062880400117009,
+    "target": 0
+  },
+  {
+    "race_id": "2025-17",
+    "driver_id": "piastri",
+    "probability": 0.1228813301266672,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "russell",
+    "probability": 0.04050848256832806,
+    "target": 1
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "max_verstappen",
+    "probability": 0.41559135694874266,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "norris",
+    "probability": 0.04527602572409023,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "piastri",
+    "probability": 0.06209156924393271,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "antonelli",
+    "probability": 0.03799689112324694,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "leclerc",
+    "probability": 0.06441910514948555,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "alonso",
+    "probability": 0.01114692372346733,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "hamilton",
+    "probability": 0.10721120952020684,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "bearman",
+    "probability": 0.01091640280600215,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "sainz",
+    "probability": 0.019952147919807765,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "hadjar",
+    "probability": 0.02090537619091037,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "tsunoda",
+    "probability": 0.05630731209885706,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "stroll",
+    "probability": 0.009594976795362607,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "albon",
+    "probability": 0.01451985932803072,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "lawson",
+    "probability": 0.022490884267925927,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "colapinto",
+    "probability": 0.008096163937146173,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "bortoleto",
+    "probability": 0.015513882338265396,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "ocon",
+    "probability": 0.013835055853820808,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "gasly",
+    "probability": 0.010329601231712586,
+    "target": 0
+  },
+  {
+    "race_id": "2025-18",
+    "driver_id": "hulkenberg",
+    "probability": 0.013296773230657883,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "norris",
+    "probability": 0.02085041817876307,
+    "target": 1
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "leclerc",
+    "probability": 0.05718969330751685,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "max_verstappen",
+    "probability": 0.4920772913016701,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "bearman",
+    "probability": 0.011756274428724907,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "piastri",
+    "probability": 0.027977717006578886,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "antonelli",
+    "probability": 0.04300367338677184,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "russell",
+    "probability": 0.05367693390458732,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "hamilton",
+    "probability": 0.10239714517890451,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "ocon",
+    "probability": 0.01279522578961714,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "bortoleto",
+    "probability": 0.008034217395842343,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "tsunoda",
+    "probability": 0.07143858490828064,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "albon",
+    "probability": 0.010576611037882998,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "hadjar",
+    "probability": 0.016873075238812693,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "stroll",
+    "probability": 0.007756172130117207,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "gasly",
+    "probability": 0.007402582731817309,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "colapinto",
+    "probability": 0.0066238271220414365,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "sainz",
+    "probability": 0.01590384756174257,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "alonso",
+    "probability": 0.009718265958491876,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "hulkenberg",
+    "probability": 0.008187543597213262,
+    "target": 0
+  },
+  {
+    "race_id": "2025-20",
+    "driver_id": "lawson",
+    "probability": 0.01576089983462278,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "max_verstappen",
+    "probability": 0.41001472493850644,
+    "target": 1
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "russell",
+    "probability": 0.0690654265171118,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "antonelli",
+    "probability": 0.06561271172509041,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "leclerc",
+    "probability": 0.06507303344676318,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "sainz",
+    "probability": 0.013059257004807052,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "hadjar",
+    "probability": 0.015154372830762368,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "hulkenberg",
+    "probability": 0.009230008460562855,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "hamilton",
+    "probability": 0.11163691791649687,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "ocon",
+    "probability": 0.016420594469119792,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "bearman",
+    "probability": 0.015671057183362386,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "alonso",
+    "probability": 0.00887832205902339,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "tsunoda",
+    "probability": 0.06085498229735289,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "gasly",
+    "probability": 0.009171311916498177,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "lawson",
+    "probability": 0.015191866802376502,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "colapinto",
+    "probability": 0.00732316257825569,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "albon",
+    "probability": 0.008327483873094387,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "bortoleto",
+    "probability": 0.007920091427397287,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "stroll",
+    "probability": 0.007082957948133038,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "norris",
+    "probability": 0.055160500925896805,
+    "target": 0
+  },
+  {
+    "race_id": "2025-22",
+    "driver_id": "piastri",
+    "probability": 0.029151215679388814,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "max_verstappen",
+    "probability": 0.4736984048042094,
+    "target": 1
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "piastri",
+    "probability": 0.02498736327596911,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "norris",
+    "probability": 0.04125856773988325,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "leclerc",
+    "probability": 0.0647010274603731,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "russell",
+    "probability": 0.04061241051267746,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "alonso",
+    "probability": 0.008820874650368947,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "ocon",
+    "probability": 0.017308052003255518,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "hamilton",
+    "probability": 0.1076859616771331,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "hulkenberg",
+    "probability": 0.010686281016637406,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "stroll",
+    "probability": 0.006433188602490858,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "bortoleto",
+    "probability": 0.0082343765615032,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "bearman",
+    "probability": 0.014089243416248898,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "sainz",
+    "probability": 0.01418107094061366,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "tsunoda",
+    "probability": 0.059578018708895626,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "antonelli",
+    "probability": 0.05242688650413578,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "albon",
+    "probability": 0.00861253228594821,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "hadjar",
+    "probability": 0.01324203330407607,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "lawson",
+    "probability": 0.013274821618443435,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "gasly",
+    "probability": 0.011300052809275263,
+    "target": 0
+  },
+  {
+    "race_id": "2025-24",
+    "driver_id": "colapinto",
+    "probability": 0.008868832107861593,
+    "target": 0
+  }
+]

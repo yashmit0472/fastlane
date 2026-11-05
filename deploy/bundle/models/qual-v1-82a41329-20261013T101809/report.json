@@ -1,0 +1,313 @@
+{
+  "status": "backtested",
+  "model_version": "qual-v1-82a41329-20261013T101809",
+  "feature_version": "qualifying-history-v1",
+  "created_at": "2026-10-13T10:18:09.926812+00:00",
+  "training_window": "2019\u20132022 (74 races)",
+  "validation_window": "2023\u20132023 (16 races)",
+  "test_window": "2024\u20132024 (18 races)",
+  "trained_until": "2022-11-20T13:00:00+00:00",
+  "selected_model": "logistic",
+  "selection_rule": "lowest validation race log loss",
+  "metrics": {
+    "grid_baseline": {
+      "log_loss": 1.2646848811270175,
+      "brier": 0.6281740185615797,
+      "top1_accuracy": 0.5555555555555556,
+      "races": 18
+    },
+    "logistic": {
+      "log_loss": 1.438253826889133,
+      "brier": 0.7247995884290649,
+      "top1_accuracy": 0.4444444444444444,
+      "races": 18
+    },
+    "catboost": {
+      "log_loss": 1.678477826790476,
+      "brier": 0.708665236327876,
+      "top1_accuracy": 0.5,
+      "races": 18
+    }
+  },
+  "validation_metrics": {
+    "grid_baseline": {
+      "log_loss": 1.1926112430722293,
+      "brier": 0.4993990929005653,
+      "top1_accuracy": 0.6875,
+      "races": 16
+    },
+    "logistic": {
+      "log_loss": 0.31600742598106785,
+      "brier": 0.17623380161662167,
+      "top1_accuracy": 0.875,
+      "races": 16
+    },
+    "catboost": {
+      "log_loss": 0.3563037703852304,
+      "brier": 0.2346254944715212,
+      "top1_accuracy": 0.75,
+      "races": 16
+    }
+  },
+  "temperatures": {
+    "grid_baseline": 0.6155722066724582,
+    "logistic": 0.5743491774985175,
+    "catboost": 0.5
+  },
+  "grid_rates": {
+    "1": 0.40425531914893614,
+    "2": 0.1702127659574468,
+    "3": 0.13829787234042554,
+    "4": 0.05319148936170213,
+    "5": 0.02127659574468085,
+    "6": 0.02127659574468085,
+    "7": 0.02127659574468085,
+    "8": 0.02127659574468085,
+    "9": 0.010638297872340425,
+    "10": 0.031914893617021274,
+    "11": 0.010638297872340425,
+    "12": 0.010638297872340425,
+    "13": 0.010638297872340425,
+    "14": 0.010638297872340425,
+    "15": 0.010638297872340425,
+    "16": 0.010638297872340425,
+    "17": 0.010638297872340425,
+    "18": 0.010638297872340425,
+    "19": 0.010638297872340425,
+    "20": 0.010638297872340425
+  },
+  "reliability": {
+    "grid_baseline": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "n": 305,
+        "mean_probability": 0.004497282556782722,
+        "observed_win_rate": 0.006557377049180328
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "n": 36,
+        "mean_probability": 0.13670963538565742,
+        "observed_win_rate": 0.16666666666666666
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "n": 18,
+        "mean_probability": 0.6503767747943112,
+        "observed_win_rate": 0.5555555555555556
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      }
+    ],
+    "logistic": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "n": 323,
+        "mean_probability": 0.004217189516753787,
+        "observed_win_rate": 0.01238390092879257
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "n": 11,
+        "mean_probability": 0.15333390499796737,
+        "observed_win_rate": 0.2727272727272727
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "n": 4,
+        "mean_probability": 0.26499605390265174,
+        "observed_win_rate": 0.5
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "n": 5,
+        "mean_probability": 0.3654159031342714,
+        "observed_win_rate": 0.4
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "n": 3,
+        "mean_probability": 0.45862192284422637,
+        "observed_win_rate": 0.0
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "n": 2,
+        "mean_probability": 0.5313784965760846,
+        "observed_win_rate": 0.5
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "n": 1,
+        "mean_probability": 0.6267192848564058,
+        "observed_win_rate": 0.0
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "n": 2,
+        "mean_probability": 0.7757947915557997,
+        "observed_win_rate": 0.0
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "n": 1,
+        "mean_probability": 0.8408316273010472,
+        "observed_win_rate": 1.0
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "n": 7,
+        "mean_probability": 0.9437639775535743,
+        "observed_win_rate": 0.7142857142857143
+      }
+    ],
+    "catboost": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "n": 325,
+        "mean_probability": 0.0026348168941717513,
+        "observed_win_rate": 0.018461538461538463
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "n": 9,
+        "mean_probability": 0.14072978632343716,
+        "observed_win_rate": 0.1111111111111111
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "n": 3,
+        "mean_probability": 0.2503489352208674,
+        "observed_win_rate": 0.0
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "n": 2,
+        "mean_probability": 0.3239918476104423,
+        "observed_win_rate": 0.5
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "n": 4,
+        "mean_probability": 0.4319449908483195,
+        "observed_win_rate": 0.5
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "n": 3,
+        "mean_probability": 0.537789677088722,
+        "observed_win_rate": 0.0
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "n": 3,
+        "mean_probability": 0.6628611327010557,
+        "observed_win_rate": 0.3333333333333333
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "n": 3,
+        "mean_probability": 0.7483408626198836,
+        "observed_win_rate": 0.6666666666666666
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "n": 7,
+        "mean_probability": 0.9861901358539281,
+        "observed_win_rate": 0.7142857142857143
+      }
+    ]
+  },
+  "features": [
+    "qualifying_position",
+    "qualifying_gap_s",
+    "circuit_grid_prior",
+    "recent_finish",
+    "recent_win_rate",
+    "team_recent_finish",
+    "prior_starts",
+    "driver_id",
+    "constructor_id",
+    "circuit_id"
+  ],
+  "dataset_sha256": "82a4132947c5aef2c75168096c02da071e8250cf287a670901b4bc4bdf1073c3",
+  "code_commit": "uncommitted local workspace",
+  "seed": 42,
+  "notice": "Qualifying/history experiment; estimated historical publication cutoffs. Practice/weather excluded. No live forecast certification."
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "weather-reliability-v1",
+  "stages": {
+    "FP1": {
+      "report": "ml/artifacts/conditions-v1-20261025T071156/FP1/report.json",
+      "sha256": "7437ffb319d8b29adfefebd54240e047a815d2be0b244ee7efd62c231a320994"
+    },
+    "FP2": {
+      "report": "ml/artifacts/conditions-v1-20261025T071156/FP2/report.json",
+      "sha256": "712d628c2c90e163405cfab8819752efd5ff4f101b2bd69f851b341ff830d68e"
+    },
+    "FP3": {
+      "report": "ml/artifacts/conditions-v1-20261025T071156/FP3/report.json",
+      "sha256": "58b8a1f4bedd2e2746eca3ff70776d83e40d5286cbcc88918222103bb7c7e9af"
+    },
+    "Q": {
+      "report": "ml/artifacts/conditions-v1-20261025T071156/Q/report.json",
+      "sha256": "7992cd29a82698435f858cc5c522f8b00ce2bcb81ac55b773ed206843e3bf523"
+    }
+  }
+}

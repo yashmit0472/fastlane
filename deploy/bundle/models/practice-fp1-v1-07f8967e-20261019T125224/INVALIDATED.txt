@@ -1,0 +1,1 @@
+Superseded preparation run: tie-scoring or historical-roster audit corrections. Use practice-active.json for the current consistent-field evaluated bundle.

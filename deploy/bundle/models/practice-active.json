@@ -1,0 +1,17 @@
+{
+  "feature_version": "practice-history-v1",
+  "stages": {
+    "FP1": {
+      "report": "ml/artifacts/practice-fp1-v1-0fa3e3e8-20261019T130104/report.json",
+      "sha256": "b5d0ebec8e45805e76126868fcb8c94434fdf915f1102357b5db341a5e135565"
+    },
+    "FP2": {
+      "report": "ml/artifacts/practice-fp2-v1-dd05a7e5-20261019T130112/report.json",
+      "sha256": "1e91deafd3311f9cf8f2d92e5cac0b17c8d67db07d5e7eeb9139e91b9f1b8a1b"
+    },
+    "FP3": {
+      "report": "ml/artifacts/practice-fp3-v1-8721abbc-20261019T130122/report.json",
+      "sha256": "ad6c49e981a0dd4e18587c30133c459ea07cc31b6cba95aba2cf6cbaf7ba9766"
+    }
+  }
+}

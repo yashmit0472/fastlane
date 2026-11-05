@@ -1,0 +1,3285 @@
+{
+  "race": {
+    "race_id": "showcase-singapore",
+    "name": "Singapore Grand Prix",
+    "season": 2024,
+    "round": 18,
+    "circuit_id": "marina_bay",
+    "circuit": "Marina Bay Street Circuit",
+    "country": "Singapore",
+    "scheduled_at": "2024-09-22T12:00:00Z",
+    "timezone": "Asia/Singapore",
+    "status": "showcase",
+    "is_demo": true,
+    "source": "Synthetic educational fixture",
+    "source_updated_at": "2024-09-21T16:00:00Z",
+    "laps": 62,
+    "length_km": 4.94,
+    "corners": 19
+  },
+  "prediction": {
+    "race_id": "showcase-singapore",
+    "model_version": "showcase-v1",
+    "cutoff": "2024-09-21T16:00:00Z",
+    "updated_at": "2024-09-21T16:00:00Z",
+    "race_start": "2024-09-22T12:00:00Z",
+    "is_demo": true,
+    "calibrated": false,
+    "status": "illustrative",
+    "drivers": [
+      {
+        "driver_id": "norris",
+        "name": "Lando Norris",
+        "abbreviation": "NOR",
+        "number": 4,
+        "team": "McLaren",
+        "color": "#ff9b42",
+        "grid": 1,
+        "probability": 0.318,
+        "factors": [
+          "Starting from P1",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "max_verstappen",
+        "name": "Max Verstappen",
+        "abbreviation": "VER",
+        "number": 1,
+        "team": "Red Bull Racing",
+        "color": "#639aff",
+        "grid": 2,
+        "probability": 0.24600000000000002,
+        "factors": [
+          "Starting from P2",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "leclerc",
+        "name": "Charles Leclerc",
+        "abbreviation": "LEC",
+        "number": 16,
+        "team": "Ferrari",
+        "color": "#ef4444",
+        "grid": 9,
+        "probability": 0.142,
+        "factors": [
+          "Starting from P9",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "piastri",
+        "name": "Oscar Piastri",
+        "abbreviation": "PIA",
+        "number": 81,
+        "team": "McLaren",
+        "color": "#ff9b42",
+        "grid": 5,
+        "probability": 0.10400000000000001,
+        "factors": [
+          "Starting from P5",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "hamilton",
+        "name": "Lewis Hamilton",
+        "abbreviation": "HAM",
+        "number": 44,
+        "team": "Mercedes",
+        "color": "#55d4bc",
+        "grid": 3,
+        "probability": 0.068,
+        "factors": [
+          "Starting from P3",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "russell",
+        "name": "George Russell",
+        "abbreviation": "RUS",
+        "number": 63,
+        "team": "Mercedes",
+        "color": "#55d4bc",
+        "grid": 4,
+        "probability": 0.046,
+        "factors": [
+          "Starting from P4",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "sainz",
+        "name": "Carlos Sainz",
+        "abbreviation": "SAI",
+        "number": 55,
+        "team": "Ferrari",
+        "color": "#ef4444",
+        "grid": 10,
+        "probability": 0.027999999999999997,
+        "factors": [
+          "Starting from P10",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "perez",
+        "name": "Sergio Pérez",
+        "abbreviation": "PER",
+        "number": 11,
+        "team": "Red Bull Racing",
+        "color": "#639aff",
+        "grid": 13,
+        "probability": 0.015,
+        "factors": [
+          "Starting from P13",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "alonso",
+        "name": "Fernando Alonso",
+        "abbreviation": "ALO",
+        "number": 14,
+        "team": "Aston Martin",
+        "color": "#64c9a4",
+        "grid": 7,
+        "probability": 0.008,
+        "factors": [
+          "Starting from P7",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "hulkenberg",
+        "name": "Nico Hülkenberg",
+        "abbreviation": "HUL",
+        "number": 27,
+        "team": "Haas",
+        "color": "#d2d4dc",
+        "grid": 6,
+        "probability": 0.005,
+        "factors": [
+          "Starting from P6",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "tsunoda",
+        "name": "Yuki Tsunoda",
+        "abbreviation": "TSU",
+        "number": 22,
+        "team": "RB",
+        "color": "#8b94fa",
+        "grid": 8,
+        "probability": 0.004,
+        "factors": [
+          "Starting from P8",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "colapinto",
+        "name": "Franco Colapinto",
+        "abbreviation": "COL",
+        "number": 43,
+        "team": "Williams",
+        "color": "#6bbdff",
+        "grid": 12,
+        "probability": 0.003,
+        "factors": [
+          "Starting from P12",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "albon",
+        "name": "Alexander Albon",
+        "abbreviation": "ALB",
+        "number": 23,
+        "team": "Williams",
+        "color": "#6bbdff",
+        "grid": 11,
+        "probability": 0.003,
+        "factors": [
+          "Starting from P11",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "ricciardo",
+        "name": "Daniel Ricciardo",
+        "abbreviation": "RIC",
+        "number": 3,
+        "team": "RB",
+        "color": "#8b94fa",
+        "grid": 16,
+        "probability": 0.002,
+        "factors": [
+          "Starting from P16",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "stroll",
+        "name": "Lance Stroll",
+        "abbreviation": "STR",
+        "number": 18,
+        "team": "Aston Martin",
+        "color": "#64c9a4",
+        "grid": 17,
+        "probability": 0.002,
+        "factors": [
+          "Starting from P17",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "ocon",
+        "name": "Esteban Ocon",
+        "abbreviation": "OCO",
+        "number": 31,
+        "team": "Alpine",
+        "color": "#ed80bd",
+        "grid": 15,
+        "probability": 0.002,
+        "factors": [
+          "Starting from P15",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "gasly",
+        "name": "Pierre Gasly",
+        "abbreviation": "GAS",
+        "number": 10,
+        "team": "Alpine",
+        "color": "#ed80bd",
+        "grid": 18,
+        "probability": 0.001,
+        "factors": [
+          "Starting from P18",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "bottas",
+        "name": "Valtteri Bottas",
+        "abbreviation": "BOT",
+        "number": 77,
+        "team": "Kick Sauber",
+        "color": "#a6df61",
+        "grid": 19,
+        "probability": 0.001,
+        "factors": [
+          "Starting from P19",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "zhou",
+        "name": "Zhou Guanyu",
+        "abbreviation": "ZHO",
+        "number": 24,
+        "team": "Kick Sauber",
+        "color": "#a6df61",
+        "grid": 20,
+        "probability": 0.001,
+        "factors": [
+          "Starting from P20",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      },
+      {
+        "driver_id": "magnussen",
+        "name": "Kevin Magnussen",
+        "abbreviation": "MAG",
+        "number": 20,
+        "team": "Haas",
+        "color": "#d2d4dc",
+        "grid": 14,
+        "probability": 0.001,
+        "factors": [
+          "Starting from P14",
+          "Relative practice pace",
+          "Prior circuit conversion"
+        ]
+      }
+    ]
+  },
+  "weekend": {
+    "race_id": "showcase-singapore",
+    "is_demo": true,
+    "cutoff": "2024-09-21T16:00:00Z",
+    "updated_at": "2024-09-21T16:00:00Z",
+    "sessions": [
+      {
+        "type": "FP1",
+        "status": "illustrative",
+        "drivers": [
+          {
+            "driver_id": "norris",
+            "name": "Lando Norris",
+            "abbreviation": "NOR",
+            "team": "McLaren",
+            "color": "#ff9b42",
+            "best_lap_ms": 91400,
+            "representative_lap_ms": 96500,
+            "lap_count": 18,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 0
+          },
+          {
+            "driver_id": "max_verstappen",
+            "name": "Max Verstappen",
+            "abbreviation": "VER",
+            "team": "Red Bull Racing",
+            "color": "#639aff",
+            "best_lap_ms": 91564,
+            "representative_lap_ms": 96584,
+            "lap_count": 21,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 164
+          },
+          {
+            "driver_id": "russell",
+            "name": "George Russell",
+            "abbreviation": "RUS",
+            "team": "Mercedes",
+            "color": "#55d4bc",
+            "best_lap_ms": 91678,
+            "representative_lap_ms": 96920,
+            "lap_count": 21,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 278
+          },
+          {
+            "driver_id": "hamilton",
+            "name": "Lewis Hamilton",
+            "abbreviation": "HAM",
+            "team": "Mercedes",
+            "color": "#55d4bc",
+            "best_lap_ms": 91694,
+            "representative_lap_ms": 96836,
+            "lap_count": 18,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 294
+          },
+          {
+            "driver_id": "piastri",
+            "name": "Oscar Piastri",
+            "abbreviation": "PIA",
+            "team": "McLaren",
+            "color": "#ff9b42",
+            "best_lap_ms": 91803,
+            "representative_lap_ms": 96752,
+            "lap_count": 27,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 403
+          },
+          {
+            "driver_id": "hulkenberg",
+            "name": "Nico Hülkenberg",
+            "abbreviation": "HUL",
+            "team": "Haas",
+            "color": "#d2d4dc",
+            "best_lap_ms": 91972,
+            "representative_lap_ms": 97256,
+            "lap_count": 21,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 572
+          },
+          {
+            "driver_id": "alonso",
+            "name": "Fernando Alonso",
+            "abbreviation": "ALO",
+            "team": "Aston Martin",
+            "color": "#64c9a4",
+            "best_lap_ms": 91990,
+            "representative_lap_ms": 97172,
+            "lap_count": 18,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 590
+          },
+          {
+            "driver_id": "tsunoda",
+            "name": "Yuki Tsunoda",
+            "abbreviation": "TSU",
+            "team": "RB",
+            "color": "#8b94fa",
+            "best_lap_ms": 92047,
+            "representative_lap_ms": 97340,
+            "lap_count": 24,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 647
+          },
+          {
+            "driver_id": "leclerc",
+            "name": "Charles Leclerc",
+            "abbreviation": "LEC",
+            "team": "Ferrari",
+            "color": "#ef4444",
+            "best_lap_ms": 92274,
+            "representative_lap_ms": 96668,
+            "lap_count": 24,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 874
+          },
+          {
+            "driver_id": "sainz",
+            "name": "Carlos Sainz",
+            "abbreviation": "SAI",
+            "team": "Ferrari",
+            "color": "#ef4444",
+            "best_lap_ms": 92297,
+            "representative_lap_ms": 97004,
+            "lap_count": 24,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 897
+          },
+          {
+            "driver_id": "albon",
+            "name": "Alexander Albon",
+            "abbreviation": "ALB",
+            "team": "Williams",
+            "color": "#6bbdff",
+            "best_lap_ms": 92466,
+            "representative_lap_ms": 97508,
+            "lap_count": 18,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1066
+          },
+          {
+            "driver_id": "colapinto",
+            "name": "Franco Colapinto",
+            "abbreviation": "COL",
+            "team": "Williams",
+            "color": "#6bbdff",
+            "best_lap_ms": 92484,
+            "representative_lap_ms": 97424,
+            "lap_count": 27,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1084
+          },
+          {
+            "driver_id": "perez",
+            "name": "Sergio Pérez",
+            "abbreviation": "PER",
+            "team": "Red Bull Racing",
+            "color": "#639aff",
+            "best_lap_ms": 92643,
+            "representative_lap_ms": 97088,
+            "lap_count": 27,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1243
+          },
+          {
+            "driver_id": "ocon",
+            "name": "Esteban Ocon",
+            "abbreviation": "OCO",
+            "team": "Alpine",
+            "color": "#ed80bd",
+            "best_lap_ms": 92689,
+            "representative_lap_ms": 97760,
+            "lap_count": 27,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1289
+          },
+          {
+            "driver_id": "magnussen",
+            "name": "Kevin Magnussen",
+            "abbreviation": "MAG",
+            "team": "Haas",
+            "color": "#d2d4dc",
+            "best_lap_ms": 92710,
+            "representative_lap_ms": 98096,
+            "lap_count": 27,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1310
+          },
+          {
+            "driver_id": "ricciardo",
+            "name": "Daniel Ricciardo",
+            "abbreviation": "RIC",
+            "team": "RB",
+            "color": "#8b94fa",
+            "best_lap_ms": 92814,
+            "representative_lap_ms": 97592,
+            "lap_count": 21,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1414
+          },
+          {
+            "driver_id": "stroll",
+            "name": "Lance Stroll",
+            "abbreviation": "STR",
+            "team": "Aston Martin",
+            "color": "#64c9a4",
+            "best_lap_ms": 92978,
+            "representative_lap_ms": 97676,
+            "lap_count": 24,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1578
+          },
+          {
+            "driver_id": "gasly",
+            "name": "Pierre Gasly",
+            "abbreviation": "GAS",
+            "team": "Alpine",
+            "color": "#ed80bd",
+            "best_lap_ms": 93035,
+            "representative_lap_ms": 97844,
+            "lap_count": 18,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1635
+          },
+          {
+            "driver_id": "zhou",
+            "name": "Zhou Guanyu",
+            "abbreviation": "ZHO",
+            "team": "Kick Sauber",
+            "color": "#a6df61",
+            "best_lap_ms": 93183,
+            "representative_lap_ms": 98012,
+            "lap_count": 24,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1783
+          },
+          {
+            "driver_id": "bottas",
+            "name": "Valtteri Bottas",
+            "abbreviation": "BOT",
+            "team": "Kick Sauber",
+            "color": "#a6df61",
+            "best_lap_ms": 93199,
+            "representative_lap_ms": 97928,
+            "lap_count": 21,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1799
+          }
+        ]
+      },
+      {
+        "type": "FP2",
+        "status": "illustrative",
+        "drivers": [
+          {
+            "driver_id": "norris",
+            "name": "Lando Norris",
+            "abbreviation": "NOR",
+            "team": "McLaren",
+            "color": "#ff9b42",
+            "best_lap_ms": 91043,
+            "representative_lap_ms": 96610,
+            "lap_count": 18,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 0
+          },
+          {
+            "driver_id": "max_verstappen",
+            "name": "Max Verstappen",
+            "abbreviation": "VER",
+            "team": "Red Bull Racing",
+            "color": "#639aff",
+            "best_lap_ms": 91207,
+            "representative_lap_ms": 96694,
+            "lap_count": 21,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 164
+          },
+          {
+            "driver_id": "russell",
+            "name": "George Russell",
+            "abbreviation": "RUS",
+            "team": "Mercedes",
+            "color": "#55d4bc",
+            "best_lap_ms": 91321,
+            "representative_lap_ms": 97030,
+            "lap_count": 21,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 278
+          },
+          {
+            "driver_id": "hamilton",
+            "name": "Lewis Hamilton",
+            "abbreviation": "HAM",
+            "team": "Mercedes",
+            "color": "#55d4bc",
+            "best_lap_ms": 91337,
+            "representative_lap_ms": 96946,
+            "lap_count": 18,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 294
+          },
+          {
+            "driver_id": "piastri",
+            "name": "Oscar Piastri",
+            "abbreviation": "PIA",
+            "team": "McLaren",
+            "color": "#ff9b42",
+            "best_lap_ms": 91446,
+            "representative_lap_ms": 96862,
+            "lap_count": 27,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 403
+          },
+          {
+            "driver_id": "hulkenberg",
+            "name": "Nico Hülkenberg",
+            "abbreviation": "HUL",
+            "team": "Haas",
+            "color": "#d2d4dc",
+            "best_lap_ms": 91615,
+            "representative_lap_ms": 97366,
+            "lap_count": 21,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 572
+          },
+          {
+            "driver_id": "alonso",
+            "name": "Fernando Alonso",
+            "abbreviation": "ALO",
+            "team": "Aston Martin",
+            "color": "#64c9a4",
+            "best_lap_ms": 91633,
+            "representative_lap_ms": 97282,
+            "lap_count": 18,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 590
+          },
+          {
+            "driver_id": "tsunoda",
+            "name": "Yuki Tsunoda",
+            "abbreviation": "TSU",
+            "team": "RB",
+            "color": "#8b94fa",
+            "best_lap_ms": 91690,
+            "representative_lap_ms": 97450,
+            "lap_count": 24,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 647
+          },
+          {
+            "driver_id": "leclerc",
+            "name": "Charles Leclerc",
+            "abbreviation": "LEC",
+            "team": "Ferrari",
+            "color": "#ef4444",
+            "best_lap_ms": 91737,
+            "representative_lap_ms": 96778,
+            "lap_count": 24,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 694
+          },
+          {
+            "driver_id": "albon",
+            "name": "Alexander Albon",
+            "abbreviation": "ALB",
+            "team": "Williams",
+            "color": "#6bbdff",
+            "best_lap_ms": 91929,
+            "representative_lap_ms": 97618,
+            "lap_count": 18,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 886
+          },
+          {
+            "driver_id": "sainz",
+            "name": "Carlos Sainz",
+            "abbreviation": "SAI",
+            "team": "Ferrari",
+            "color": "#ef4444",
+            "best_lap_ms": 91940,
+            "representative_lap_ms": 97114,
+            "lap_count": 24,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 897
+          },
+          {
+            "driver_id": "perez",
+            "name": "Sergio Pérez",
+            "abbreviation": "PER",
+            "team": "Red Bull Racing",
+            "color": "#639aff",
+            "best_lap_ms": 92106,
+            "representative_lap_ms": 97198,
+            "lap_count": 27,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1063
+          },
+          {
+            "driver_id": "colapinto",
+            "name": "Franco Colapinto",
+            "abbreviation": "COL",
+            "team": "Williams",
+            "color": "#6bbdff",
+            "best_lap_ms": 92127,
+            "representative_lap_ms": 97534,
+            "lap_count": 27,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1084
+          },
+          {
+            "driver_id": "magnussen",
+            "name": "Kevin Magnussen",
+            "abbreviation": "MAG",
+            "team": "Haas",
+            "color": "#d2d4dc",
+            "best_lap_ms": 92173,
+            "representative_lap_ms": 98206,
+            "lap_count": 27,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1130
+          },
+          {
+            "driver_id": "ocon",
+            "name": "Esteban Ocon",
+            "abbreviation": "OCO",
+            "team": "Alpine",
+            "color": "#ed80bd",
+            "best_lap_ms": 92332,
+            "representative_lap_ms": 97870,
+            "lap_count": 27,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1289
+          },
+          {
+            "driver_id": "ricciardo",
+            "name": "Daniel Ricciardo",
+            "abbreviation": "RIC",
+            "team": "RB",
+            "color": "#8b94fa",
+            "best_lap_ms": 92457,
+            "representative_lap_ms": 97702,
+            "lap_count": 21,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1414
+          },
+          {
+            "driver_id": "stroll",
+            "name": "Lance Stroll",
+            "abbreviation": "STR",
+            "team": "Aston Martin",
+            "color": "#64c9a4",
+            "best_lap_ms": 92621,
+            "representative_lap_ms": 97786,
+            "lap_count": 24,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1578
+          },
+          {
+            "driver_id": "bottas",
+            "name": "Valtteri Bottas",
+            "abbreviation": "BOT",
+            "team": "Kick Sauber",
+            "color": "#a6df61",
+            "best_lap_ms": 92662,
+            "representative_lap_ms": 98038,
+            "lap_count": 21,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1619
+          },
+          {
+            "driver_id": "gasly",
+            "name": "Pierre Gasly",
+            "abbreviation": "GAS",
+            "team": "Alpine",
+            "color": "#ed80bd",
+            "best_lap_ms": 92678,
+            "representative_lap_ms": 97954,
+            "lap_count": 18,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1635
+          },
+          {
+            "driver_id": "zhou",
+            "name": "Zhou Guanyu",
+            "abbreviation": "ZHO",
+            "team": "Kick Sauber",
+            "color": "#a6df61",
+            "best_lap_ms": 92826,
+            "representative_lap_ms": 98122,
+            "lap_count": 24,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1783
+          }
+        ]
+      },
+      {
+        "type": "FP3",
+        "status": "illustrative",
+        "drivers": [
+          {
+            "driver_id": "norris",
+            "name": "Lando Norris",
+            "abbreviation": "NOR",
+            "team": "McLaren",
+            "color": "#ff9b42",
+            "best_lap_ms": 90686,
+            "representative_lap_ms": 96720,
+            "lap_count": 18,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 0
+          },
+          {
+            "driver_id": "hamilton",
+            "name": "Lewis Hamilton",
+            "abbreviation": "HAM",
+            "team": "Mercedes",
+            "color": "#55d4bc",
+            "best_lap_ms": 90800,
+            "representative_lap_ms": 97056,
+            "lap_count": 18,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 114
+          },
+          {
+            "driver_id": "max_verstappen",
+            "name": "Max Verstappen",
+            "abbreviation": "VER",
+            "team": "Red Bull Racing",
+            "color": "#639aff",
+            "best_lap_ms": 90850,
+            "representative_lap_ms": 96804,
+            "lap_count": 21,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 164
+          },
+          {
+            "driver_id": "russell",
+            "name": "George Russell",
+            "abbreviation": "RUS",
+            "team": "Mercedes",
+            "color": "#55d4bc",
+            "best_lap_ms": 90964,
+            "representative_lap_ms": 97140,
+            "lap_count": 21,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 278
+          },
+          {
+            "driver_id": "hulkenberg",
+            "name": "Nico Hülkenberg",
+            "abbreviation": "HUL",
+            "team": "Haas",
+            "color": "#d2d4dc",
+            "best_lap_ms": 91078,
+            "representative_lap_ms": 97476,
+            "lap_count": 21,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 392
+          },
+          {
+            "driver_id": "piastri",
+            "name": "Oscar Piastri",
+            "abbreviation": "PIA",
+            "team": "McLaren",
+            "color": "#ff9b42",
+            "best_lap_ms": 91089,
+            "representative_lap_ms": 96972,
+            "lap_count": 27,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 403
+          },
+          {
+            "driver_id": "alonso",
+            "name": "Fernando Alonso",
+            "abbreviation": "ALO",
+            "team": "Aston Martin",
+            "color": "#64c9a4",
+            "best_lap_ms": 91276,
+            "representative_lap_ms": 97392,
+            "lap_count": 18,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 590
+          },
+          {
+            "driver_id": "tsunoda",
+            "name": "Yuki Tsunoda",
+            "abbreviation": "TSU",
+            "team": "RB",
+            "color": "#8b94fa",
+            "best_lap_ms": 91333,
+            "representative_lap_ms": 97560,
+            "lap_count": 24,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 647
+          },
+          {
+            "driver_id": "leclerc",
+            "name": "Charles Leclerc",
+            "abbreviation": "LEC",
+            "team": "Ferrari",
+            "color": "#ef4444",
+            "best_lap_ms": 91380,
+            "representative_lap_ms": 96888,
+            "lap_count": 24,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 694
+          },
+          {
+            "driver_id": "sainz",
+            "name": "Carlos Sainz",
+            "abbreviation": "SAI",
+            "team": "Ferrari",
+            "color": "#ef4444",
+            "best_lap_ms": 91403,
+            "representative_lap_ms": 97224,
+            "lap_count": 24,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 717
+          },
+          {
+            "driver_id": "albon",
+            "name": "Alexander Albon",
+            "abbreviation": "ALB",
+            "team": "Williams",
+            "color": "#6bbdff",
+            "best_lap_ms": 91572,
+            "representative_lap_ms": 97728,
+            "lap_count": 18,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 886
+          },
+          {
+            "driver_id": "colapinto",
+            "name": "Franco Colapinto",
+            "abbreviation": "COL",
+            "team": "Williams",
+            "color": "#6bbdff",
+            "best_lap_ms": 91590,
+            "representative_lap_ms": 97644,
+            "lap_count": 27,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 904
+          },
+          {
+            "driver_id": "perez",
+            "name": "Sergio Pérez",
+            "abbreviation": "PER",
+            "team": "Red Bull Racing",
+            "color": "#639aff",
+            "best_lap_ms": 91749,
+            "representative_lap_ms": 97308,
+            "lap_count": 27,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1063
+          },
+          {
+            "driver_id": "ocon",
+            "name": "Esteban Ocon",
+            "abbreviation": "OCO",
+            "team": "Alpine",
+            "color": "#ed80bd",
+            "best_lap_ms": 91975,
+            "representative_lap_ms": 97980,
+            "lap_count": 27,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1289
+          },
+          {
+            "driver_id": "stroll",
+            "name": "Lance Stroll",
+            "abbreviation": "STR",
+            "team": "Aston Martin",
+            "color": "#64c9a4",
+            "best_lap_ms": 92084,
+            "representative_lap_ms": 97896,
+            "lap_count": 24,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1398
+          },
+          {
+            "driver_id": "ricciardo",
+            "name": "Daniel Ricciardo",
+            "abbreviation": "RIC",
+            "team": "RB",
+            "color": "#8b94fa",
+            "best_lap_ms": 92100,
+            "representative_lap_ms": 97812,
+            "lap_count": 21,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1414
+          },
+          {
+            "driver_id": "gasly",
+            "name": "Pierre Gasly",
+            "abbreviation": "GAS",
+            "team": "Alpine",
+            "color": "#ed80bd",
+            "best_lap_ms": 92141,
+            "representative_lap_ms": 98064,
+            "lap_count": 18,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1455
+          },
+          {
+            "driver_id": "bottas",
+            "name": "Valtteri Bottas",
+            "abbreviation": "BOT",
+            "team": "Kick Sauber",
+            "color": "#a6df61",
+            "best_lap_ms": 92305,
+            "representative_lap_ms": 98148,
+            "lap_count": 21,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1619
+          },
+          {
+            "driver_id": "zhou",
+            "name": "Zhou Guanyu",
+            "abbreviation": "ZHO",
+            "team": "Kick Sauber",
+            "color": "#a6df61",
+            "best_lap_ms": 92469,
+            "representative_lap_ms": 98232,
+            "lap_count": 24,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1783
+          },
+          {
+            "driver_id": "magnussen",
+            "name": "Kevin Magnussen",
+            "abbreviation": "MAG",
+            "team": "Haas",
+            "color": "#d2d4dc",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "unavailable",
+            "long_run_summary": null,
+            "gap_ms": null
+          }
+        ]
+      },
+      {
+        "type": "Q1",
+        "status": "illustrative",
+        "drivers": [
+          {
+            "driver_id": "max_verstappen",
+            "name": "Max Verstappen",
+            "abbreviation": "VER",
+            "team": "Red Bull Racing",
+            "color": "#639aff",
+            "best_lap_ms": 90313,
+            "representative_lap_ms": null,
+            "lap_count": 6,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 0
+          },
+          {
+            "driver_id": "norris",
+            "name": "Lando Norris",
+            "abbreviation": "NOR",
+            "team": "McLaren",
+            "color": "#ff9b42",
+            "best_lap_ms": 90329,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 16
+          },
+          {
+            "driver_id": "hamilton",
+            "name": "Lewis Hamilton",
+            "abbreviation": "HAM",
+            "team": "Mercedes",
+            "color": "#55d4bc",
+            "best_lap_ms": 90443,
+            "representative_lap_ms": null,
+            "lap_count": 6,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 130
+          },
+          {
+            "driver_id": "piastri",
+            "name": "Oscar Piastri",
+            "abbreviation": "PIA",
+            "team": "McLaren",
+            "color": "#ff9b42",
+            "best_lap_ms": 90552,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 239
+          },
+          {
+            "driver_id": "russell",
+            "name": "George Russell",
+            "abbreviation": "RUS",
+            "team": "Mercedes",
+            "color": "#55d4bc",
+            "best_lap_ms": 90607,
+            "representative_lap_ms": null,
+            "lap_count": 7,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 294
+          },
+          {
+            "driver_id": "hulkenberg",
+            "name": "Nico Hülkenberg",
+            "abbreviation": "HUL",
+            "team": "Haas",
+            "color": "#d2d4dc",
+            "best_lap_ms": 90721,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 408
+          },
+          {
+            "driver_id": "alonso",
+            "name": "Fernando Alonso",
+            "abbreviation": "ALO",
+            "team": "Aston Martin",
+            "color": "#64c9a4",
+            "best_lap_ms": 90739,
+            "representative_lap_ms": null,
+            "lap_count": 7,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 426
+          },
+          {
+            "driver_id": "tsunoda",
+            "name": "Yuki Tsunoda",
+            "abbreviation": "TSU",
+            "team": "RB",
+            "color": "#8b94fa",
+            "best_lap_ms": 90976,
+            "representative_lap_ms": null,
+            "lap_count": 6,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 663
+          },
+          {
+            "driver_id": "leclerc",
+            "name": "Charles Leclerc",
+            "abbreviation": "LEC",
+            "team": "Ferrari",
+            "color": "#ef4444",
+            "best_lap_ms": 91023,
+            "representative_lap_ms": null,
+            "lap_count": 7,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 710
+          },
+          {
+            "driver_id": "sainz",
+            "name": "Carlos Sainz",
+            "abbreviation": "SAI",
+            "team": "Ferrari",
+            "color": "#ef4444",
+            "best_lap_ms": 91046,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 733
+          },
+          {
+            "driver_id": "albon",
+            "name": "Alexander Albon",
+            "abbreviation": "ALB",
+            "team": "Williams",
+            "color": "#6bbdff",
+            "best_lap_ms": 91215,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 902
+          },
+          {
+            "driver_id": "colapinto",
+            "name": "Franco Colapinto",
+            "abbreviation": "COL",
+            "team": "Williams",
+            "color": "#6bbdff",
+            "best_lap_ms": 91233,
+            "representative_lap_ms": null,
+            "lap_count": 7,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 920
+          },
+          {
+            "driver_id": "perez",
+            "name": "Sergio Pérez",
+            "abbreviation": "PER",
+            "team": "Red Bull Racing",
+            "color": "#639aff",
+            "best_lap_ms": 91392,
+            "representative_lap_ms": null,
+            "lap_count": 6,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1079
+          },
+          {
+            "driver_id": "magnussen",
+            "name": "Kevin Magnussen",
+            "abbreviation": "MAG",
+            "team": "Haas",
+            "color": "#d2d4dc",
+            "best_lap_ms": 91459,
+            "representative_lap_ms": null,
+            "lap_count": 6,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1146
+          },
+          {
+            "driver_id": "ricciardo",
+            "name": "Daniel Ricciardo",
+            "abbreviation": "RIC",
+            "team": "RB",
+            "color": "#8b94fa",
+            "best_lap_ms": 91563,
+            "representative_lap_ms": null,
+            "lap_count": 6,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1250
+          },
+          {
+            "driver_id": "ocon",
+            "name": "Esteban Ocon",
+            "abbreviation": "OCO",
+            "team": "Alpine",
+            "color": "#ed80bd",
+            "best_lap_ms": 91618,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1305
+          },
+          {
+            "driver_id": "stroll",
+            "name": "Lance Stroll",
+            "abbreviation": "STR",
+            "team": "Aston Martin",
+            "color": "#64c9a4",
+            "best_lap_ms": 91727,
+            "representative_lap_ms": null,
+            "lap_count": 7,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1414
+          },
+          {
+            "driver_id": "gasly",
+            "name": "Pierre Gasly",
+            "abbreviation": "GAS",
+            "team": "Alpine",
+            "color": "#ed80bd",
+            "best_lap_ms": 91784,
+            "representative_lap_ms": null,
+            "lap_count": 6,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1471
+          },
+          {
+            "driver_id": "zhou",
+            "name": "Zhou Guanyu",
+            "abbreviation": "ZHO",
+            "team": "Kick Sauber",
+            "color": "#a6df61",
+            "best_lap_ms": 91932,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1619
+          },
+          {
+            "driver_id": "bottas",
+            "name": "Valtteri Bottas",
+            "abbreviation": "BOT",
+            "team": "Kick Sauber",
+            "color": "#a6df61",
+            "best_lap_ms": 91948,
+            "representative_lap_ms": null,
+            "lap_count": 7,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1635
+          }
+        ]
+      },
+      {
+        "type": "Q2",
+        "status": "illustrative",
+        "drivers": [
+          {
+            "driver_id": "norris",
+            "name": "Lando Norris",
+            "abbreviation": "NOR",
+            "team": "McLaren",
+            "color": "#ff9b42",
+            "best_lap_ms": 89792,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 0
+          },
+          {
+            "driver_id": "max_verstappen",
+            "name": "Max Verstappen",
+            "abbreviation": "VER",
+            "team": "Red Bull Racing",
+            "color": "#639aff",
+            "best_lap_ms": 89956,
+            "representative_lap_ms": null,
+            "lap_count": 6,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 164
+          },
+          {
+            "driver_id": "russell",
+            "name": "George Russell",
+            "abbreviation": "RUS",
+            "team": "Mercedes",
+            "color": "#55d4bc",
+            "best_lap_ms": 90070,
+            "representative_lap_ms": null,
+            "lap_count": 7,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 278
+          },
+          {
+            "driver_id": "hamilton",
+            "name": "Lewis Hamilton",
+            "abbreviation": "HAM",
+            "team": "Mercedes",
+            "color": "#55d4bc",
+            "best_lap_ms": 90086,
+            "representative_lap_ms": null,
+            "lap_count": 6,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 294
+          },
+          {
+            "driver_id": "piastri",
+            "name": "Oscar Piastri",
+            "abbreviation": "PIA",
+            "team": "McLaren",
+            "color": "#ff9b42",
+            "best_lap_ms": 90195,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 403
+          },
+          {
+            "driver_id": "hulkenberg",
+            "name": "Nico Hülkenberg",
+            "abbreviation": "HUL",
+            "team": "Haas",
+            "color": "#d2d4dc",
+            "best_lap_ms": 90364,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 572
+          },
+          {
+            "driver_id": "alonso",
+            "name": "Fernando Alonso",
+            "abbreviation": "ALO",
+            "team": "Aston Martin",
+            "color": "#64c9a4",
+            "best_lap_ms": 90382,
+            "representative_lap_ms": null,
+            "lap_count": 7,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 590
+          },
+          {
+            "driver_id": "tsunoda",
+            "name": "Yuki Tsunoda",
+            "abbreviation": "TSU",
+            "team": "RB",
+            "color": "#8b94fa",
+            "best_lap_ms": 90439,
+            "representative_lap_ms": null,
+            "lap_count": 6,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 647
+          },
+          {
+            "driver_id": "leclerc",
+            "name": "Charles Leclerc",
+            "abbreviation": "LEC",
+            "team": "Ferrari",
+            "color": "#ef4444",
+            "best_lap_ms": 90666,
+            "representative_lap_ms": null,
+            "lap_count": 7,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 874
+          },
+          {
+            "driver_id": "albon",
+            "name": "Alexander Albon",
+            "abbreviation": "ALB",
+            "team": "Williams",
+            "color": "#6bbdff",
+            "best_lap_ms": 90678,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 886
+          },
+          {
+            "driver_id": "sainz",
+            "name": "Carlos Sainz",
+            "abbreviation": "SAI",
+            "team": "Ferrari",
+            "color": "#ef4444",
+            "best_lap_ms": 90689,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 897
+          },
+          {
+            "driver_id": "perez",
+            "name": "Sergio Pérez",
+            "abbreviation": "PER",
+            "team": "Red Bull Racing",
+            "color": "#639aff",
+            "best_lap_ms": 90855,
+            "representative_lap_ms": null,
+            "lap_count": 6,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1063
+          },
+          {
+            "driver_id": "colapinto",
+            "name": "Franco Colapinto",
+            "abbreviation": "COL",
+            "team": "Williams",
+            "color": "#6bbdff",
+            "best_lap_ms": 90876,
+            "representative_lap_ms": null,
+            "lap_count": 7,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1084
+          },
+          {
+            "driver_id": "ocon",
+            "name": "Esteban Ocon",
+            "abbreviation": "OCO",
+            "team": "Alpine",
+            "color": "#ed80bd",
+            "best_lap_ms": 91081,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1289
+          },
+          {
+            "driver_id": "magnussen",
+            "name": "Kevin Magnussen",
+            "abbreviation": "MAG",
+            "team": "Haas",
+            "color": "#d2d4dc",
+            "best_lap_ms": 91102,
+            "representative_lap_ms": null,
+            "lap_count": 6,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 1310
+          },
+          {
+            "driver_id": "ricciardo",
+            "name": "Daniel Ricciardo",
+            "abbreviation": "RIC",
+            "team": "RB",
+            "color": "#8b94fa",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "eliminated",
+            "long_run_summary": null,
+            "gap_ms": null
+          },
+          {
+            "driver_id": "stroll",
+            "name": "Lance Stroll",
+            "abbreviation": "STR",
+            "team": "Aston Martin",
+            "color": "#64c9a4",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "eliminated",
+            "long_run_summary": null,
+            "gap_ms": null
+          },
+          {
+            "driver_id": "gasly",
+            "name": "Pierre Gasly",
+            "abbreviation": "GAS",
+            "team": "Alpine",
+            "color": "#ed80bd",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "eliminated",
+            "long_run_summary": null,
+            "gap_ms": null
+          },
+          {
+            "driver_id": "bottas",
+            "name": "Valtteri Bottas",
+            "abbreviation": "BOT",
+            "team": "Kick Sauber",
+            "color": "#a6df61",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "eliminated",
+            "long_run_summary": null,
+            "gap_ms": null
+          },
+          {
+            "driver_id": "zhou",
+            "name": "Zhou Guanyu",
+            "abbreviation": "ZHO",
+            "team": "Kick Sauber",
+            "color": "#a6df61",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "eliminated",
+            "long_run_summary": null,
+            "gap_ms": null
+          }
+        ]
+      },
+      {
+        "type": "Q3",
+        "status": "illustrative",
+        "drivers": [
+          {
+            "driver_id": "norris",
+            "name": "Lando Norris",
+            "abbreviation": "NOR",
+            "team": "McLaren",
+            "color": "#ff9b42",
+            "best_lap_ms": 89435,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 0
+          },
+          {
+            "driver_id": "hamilton",
+            "name": "Lewis Hamilton",
+            "abbreviation": "HAM",
+            "team": "Mercedes",
+            "color": "#55d4bc",
+            "best_lap_ms": 89549,
+            "representative_lap_ms": null,
+            "lap_count": 6,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 114
+          },
+          {
+            "driver_id": "max_verstappen",
+            "name": "Max Verstappen",
+            "abbreviation": "VER",
+            "team": "Red Bull Racing",
+            "color": "#639aff",
+            "best_lap_ms": 89599,
+            "representative_lap_ms": null,
+            "lap_count": 6,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 164
+          },
+          {
+            "driver_id": "russell",
+            "name": "George Russell",
+            "abbreviation": "RUS",
+            "team": "Mercedes",
+            "color": "#55d4bc",
+            "best_lap_ms": 89713,
+            "representative_lap_ms": null,
+            "lap_count": 7,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 278
+          },
+          {
+            "driver_id": "hulkenberg",
+            "name": "Nico Hülkenberg",
+            "abbreviation": "HUL",
+            "team": "Haas",
+            "color": "#d2d4dc",
+            "best_lap_ms": 89827,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 392
+          },
+          {
+            "driver_id": "piastri",
+            "name": "Oscar Piastri",
+            "abbreviation": "PIA",
+            "team": "McLaren",
+            "color": "#ff9b42",
+            "best_lap_ms": 89838,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 403
+          },
+          {
+            "driver_id": "alonso",
+            "name": "Fernando Alonso",
+            "abbreviation": "ALO",
+            "team": "Aston Martin",
+            "color": "#64c9a4",
+            "best_lap_ms": 90025,
+            "representative_lap_ms": null,
+            "lap_count": 7,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 590
+          },
+          {
+            "driver_id": "tsunoda",
+            "name": "Yuki Tsunoda",
+            "abbreviation": "TSU",
+            "team": "RB",
+            "color": "#8b94fa",
+            "best_lap_ms": 90082,
+            "representative_lap_ms": null,
+            "lap_count": 6,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 647
+          },
+          {
+            "driver_id": "leclerc",
+            "name": "Charles Leclerc",
+            "abbreviation": "LEC",
+            "team": "Ferrari",
+            "color": "#ef4444",
+            "best_lap_ms": 90129,
+            "representative_lap_ms": null,
+            "lap_count": 7,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 694
+          },
+          {
+            "driver_id": "sainz",
+            "name": "Carlos Sainz",
+            "abbreviation": "SAI",
+            "team": "Ferrari",
+            "color": "#ef4444",
+            "best_lap_ms": 90332,
+            "representative_lap_ms": null,
+            "lap_count": 5,
+            "quality": "synthetic",
+            "long_run_summary": null,
+            "gap_ms": 897
+          },
+          {
+            "driver_id": "perez",
+            "name": "Sergio Pérez",
+            "abbreviation": "PER",
+            "team": "Red Bull Racing",
+            "color": "#639aff",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "eliminated",
+            "long_run_summary": null,
+            "gap_ms": null
+          },
+          {
+            "driver_id": "colapinto",
+            "name": "Franco Colapinto",
+            "abbreviation": "COL",
+            "team": "Williams",
+            "color": "#6bbdff",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "eliminated",
+            "long_run_summary": null,
+            "gap_ms": null
+          },
+          {
+            "driver_id": "albon",
+            "name": "Alexander Albon",
+            "abbreviation": "ALB",
+            "team": "Williams",
+            "color": "#6bbdff",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "eliminated",
+            "long_run_summary": null,
+            "gap_ms": null
+          },
+          {
+            "driver_id": "ricciardo",
+            "name": "Daniel Ricciardo",
+            "abbreviation": "RIC",
+            "team": "RB",
+            "color": "#8b94fa",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "eliminated",
+            "long_run_summary": null,
+            "gap_ms": null
+          },
+          {
+            "driver_id": "stroll",
+            "name": "Lance Stroll",
+            "abbreviation": "STR",
+            "team": "Aston Martin",
+            "color": "#64c9a4",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "eliminated",
+            "long_run_summary": null,
+            "gap_ms": null
+          },
+          {
+            "driver_id": "ocon",
+            "name": "Esteban Ocon",
+            "abbreviation": "OCO",
+            "team": "Alpine",
+            "color": "#ed80bd",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "eliminated",
+            "long_run_summary": null,
+            "gap_ms": null
+          },
+          {
+            "driver_id": "gasly",
+            "name": "Pierre Gasly",
+            "abbreviation": "GAS",
+            "team": "Alpine",
+            "color": "#ed80bd",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "eliminated",
+            "long_run_summary": null,
+            "gap_ms": null
+          },
+          {
+            "driver_id": "bottas",
+            "name": "Valtteri Bottas",
+            "abbreviation": "BOT",
+            "team": "Kick Sauber",
+            "color": "#a6df61",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "eliminated",
+            "long_run_summary": null,
+            "gap_ms": null
+          },
+          {
+            "driver_id": "zhou",
+            "name": "Zhou Guanyu",
+            "abbreviation": "ZHO",
+            "team": "Kick Sauber",
+            "color": "#a6df61",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "eliminated",
+            "long_run_summary": null,
+            "gap_ms": null
+          },
+          {
+            "driver_id": "magnussen",
+            "name": "Kevin Magnussen",
+            "abbreviation": "MAG",
+            "team": "Haas",
+            "color": "#d2d4dc",
+            "best_lap_ms": null,
+            "representative_lap_ms": null,
+            "lap_count": null,
+            "quality": "eliminated",
+            "long_run_summary": null,
+            "gap_ms": null
+          }
+        ]
+      }
+    ]
+  },
+  "circuit": {
+    "circuit_id": "marina_bay",
+    "name": "Marina Bay Street Circuit",
+    "country": "Singapore",
+    "is_demo": true,
+    "years_covered": "2010–2023 (illustrative sample)",
+    "race_count": 12,
+    "cutoff": "2024-09-21T16:00:00Z",
+    "alpha": 8,
+    "source": "Synthetic educational fixture",
+    "position_stats": [
+      {
+        "grid_position": 1,
+        "starts": 12,
+        "wins": 6,
+        "podiums": 10,
+        "win_rate": 0.5,
+        "podium_rate": 0.8333333333333334,
+        "smoothed_win_rate": 0.46799999999999997
+      },
+      {
+        "grid_position": 2,
+        "starts": 12,
+        "wins": 3,
+        "podiums": 9,
+        "win_rate": 0.25,
+        "podium_rate": 0.75,
+        "smoothed_win_rate": 0.246
+      },
+      {
+        "grid_position": 3,
+        "starts": 12,
+        "wins": 1,
+        "podiums": 7,
+        "win_rate": 0.08333333333333333,
+        "podium_rate": 0.5833333333333334,
+        "smoothed_win_rate": 0.10600000000000001
+      },
+      {
+        "grid_position": 4,
+        "starts": 12,
+        "wins": 1,
+        "podiums": 4,
+        "win_rate": 0.08333333333333333,
+        "podium_rate": 0.3333333333333333,
+        "smoothed_win_rate": 0.082
+      },
+      {
+        "grid_position": 5,
+        "starts": 12,
+        "wins": 0,
+        "podiums": 3,
+        "win_rate": 0.0,
+        "podium_rate": 0.25,
+        "smoothed_win_rate": 0.016
+      },
+      {
+        "grid_position": 6,
+        "starts": 12,
+        "wins": 1,
+        "podiums": 2,
+        "win_rate": 0.08333333333333333,
+        "podium_rate": 0.16666666666666666,
+        "smoothed_win_rate": 0.062
+      },
+      {
+        "grid_position": 7,
+        "starts": 12,
+        "wins": 0,
+        "podiums": 1,
+        "win_rate": 0.0,
+        "podium_rate": 0.08333333333333333,
+        "smoothed_win_rate": 0.008
+      },
+      {
+        "grid_position": 8,
+        "starts": 12,
+        "wins": 0,
+        "podiums": 0,
+        "win_rate": 0.0,
+        "podium_rate": 0.0,
+        "smoothed_win_rate": 0.004
+      },
+      {
+        "grid_position": 9,
+        "starts": 12,
+        "wins": 0,
+        "podiums": 0,
+        "win_rate": 0.0,
+        "podium_rate": 0.0,
+        "smoothed_win_rate": 0.004
+      },
+      {
+        "grid_position": 10,
+        "starts": 12,
+        "wins": 0,
+        "podiums": 0,
+        "win_rate": 0.0,
+        "podium_rate": 0.0,
+        "smoothed_win_rate": 0.004
+      }
+    ],
+    "driver_history": [
+      {
+        "name": "Lando Norris",
+        "driver_id": "norris",
+        "starts": 5,
+        "wins": 2,
+        "podiums": 4
+      },
+      {
+        "name": "Max Verstappen",
+        "driver_id": "max_verstappen",
+        "starts": 5,
+        "wins": 1,
+        "podiums": 3
+      },
+      {
+        "name": "Charles Leclerc",
+        "driver_id": "leclerc",
+        "starts": 5,
+        "wins": 0,
+        "podiums": 2
+      },
+      {
+        "name": "Oscar Piastri",
+        "driver_id": "piastri",
+        "starts": 5,
+        "wins": 0,
+        "podiums": 1
+      },
+      {
+        "name": "Lewis Hamilton",
+        "driver_id": "hamilton",
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0
+      },
+      {
+        "name": "George Russell",
+        "driver_id": "russell",
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0
+      }
+    ],
+    "constructor_history": [
+      {
+        "name": "Red Bull Racing",
+        "starts": 24,
+        "wins": 4,
+        "podiums": 10
+      },
+      {
+        "name": "Mercedes",
+        "starts": 24,
+        "wins": 4,
+        "podiums": 11
+      },
+      {
+        "name": "Ferrari",
+        "starts": 24,
+        "wins": 3,
+        "podiums": 9
+      }
+    ]
+  },
+  "forms": [
+    {
+      "driver_id": "norris",
+      "name": "Lando Norris",
+      "abbreviation": "NOR",
+      "number": 4,
+      "team": "McLaren",
+      "color": "#ff9b42",
+      "grid": 1,
+      "probability": 0.318,
+      "factors": [
+        "Starting from P1",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 1
+        },
+        {
+          "race": "Netherlands",
+          "position": 3
+        },
+        {
+          "race": "Italy",
+          "position": 5
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 7
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 110
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 140
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 170
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 200
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 2,
+        "podiums": 4,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "max_verstappen",
+      "name": "Max Verstappen",
+      "abbreviation": "VER",
+      "number": 1,
+      "team": "Red Bull Racing",
+      "color": "#639aff",
+      "grid": 2,
+      "probability": 0.24600000000000002,
+      "factors": [
+        "Starting from P2",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 2
+        },
+        {
+          "race": "Netherlands",
+          "position": 4
+        },
+        {
+          "race": "Italy",
+          "position": 6
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 8
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 171
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 201
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 231
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 261
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 1,
+        "podiums": 3,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "leclerc",
+      "name": "Charles Leclerc",
+      "abbreviation": "LEC",
+      "number": 16,
+      "team": "Ferrari",
+      "color": "#ef4444",
+      "grid": 9,
+      "probability": 0.142,
+      "factors": [
+        "Starting from P9",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 3
+        },
+        {
+          "race": "Netherlands",
+          "position": 5
+        },
+        {
+          "race": "Italy",
+          "position": 7
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 9
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 232
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 262
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 292
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 322
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 2,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "piastri",
+      "name": "Oscar Piastri",
+      "abbreviation": "PIA",
+      "number": 81,
+      "team": "McLaren",
+      "color": "#ff9b42",
+      "grid": 5,
+      "probability": 0.10400000000000001,
+      "factors": [
+        "Starting from P5",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 4
+        },
+        {
+          "race": "Netherlands",
+          "position": 6
+        },
+        {
+          "race": "Italy",
+          "position": 8
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 10
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 293
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 323
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 353
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 383
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 1,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "hamilton",
+      "name": "Lewis Hamilton",
+      "abbreviation": "HAM",
+      "number": 44,
+      "team": "Mercedes",
+      "color": "#55d4bc",
+      "grid": 3,
+      "probability": 0.068,
+      "factors": [
+        "Starting from P3",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 5
+        },
+        {
+          "race": "Netherlands",
+          "position": 7
+        },
+        {
+          "race": "Italy",
+          "position": 9
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 11
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 354
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 384
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 414
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 444
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "russell",
+      "name": "George Russell",
+      "abbreviation": "RUS",
+      "number": 63,
+      "team": "Mercedes",
+      "color": "#55d4bc",
+      "grid": 4,
+      "probability": 0.046,
+      "factors": [
+        "Starting from P4",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 6
+        },
+        {
+          "race": "Netherlands",
+          "position": 8
+        },
+        {
+          "race": "Italy",
+          "position": 10
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 12
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 415
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 445
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 475
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 505
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "sainz",
+      "name": "Carlos Sainz",
+      "abbreviation": "SAI",
+      "number": 55,
+      "team": "Ferrari",
+      "color": "#ef4444",
+      "grid": 10,
+      "probability": 0.027999999999999997,
+      "factors": [
+        "Starting from P10",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 7
+        },
+        {
+          "race": "Netherlands",
+          "position": 9
+        },
+        {
+          "race": "Italy",
+          "position": 11
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 13
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 476
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 506
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 536
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 566
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "perez",
+      "name": "Sergio Pérez",
+      "abbreviation": "PER",
+      "number": 11,
+      "team": "Red Bull Racing",
+      "color": "#639aff",
+      "grid": 13,
+      "probability": 0.015,
+      "factors": [
+        "Starting from P13",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 8
+        },
+        {
+          "race": "Netherlands",
+          "position": 10
+        },
+        {
+          "race": "Italy",
+          "position": 12
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 1
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 537
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 567
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 597
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 627
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "alonso",
+      "name": "Fernando Alonso",
+      "abbreviation": "ALO",
+      "number": 14,
+      "team": "Aston Martin",
+      "color": "#64c9a4",
+      "grid": 7,
+      "probability": 0.008,
+      "factors": [
+        "Starting from P7",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 9
+        },
+        {
+          "race": "Netherlands",
+          "position": 11
+        },
+        {
+          "race": "Italy",
+          "position": 13
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 2
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 598
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 628
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 658
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 688
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "hulkenberg",
+      "name": "Nico Hülkenberg",
+      "abbreviation": "HUL",
+      "number": 27,
+      "team": "Haas",
+      "color": "#d2d4dc",
+      "grid": 6,
+      "probability": 0.005,
+      "factors": [
+        "Starting from P6",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 10
+        },
+        {
+          "race": "Netherlands",
+          "position": 12
+        },
+        {
+          "race": "Italy",
+          "position": 1
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 3
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 659
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 689
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 719
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 749
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "tsunoda",
+      "name": "Yuki Tsunoda",
+      "abbreviation": "TSU",
+      "number": 22,
+      "team": "RB",
+      "color": "#8b94fa",
+      "grid": 8,
+      "probability": 0.004,
+      "factors": [
+        "Starting from P8",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 11
+        },
+        {
+          "race": "Netherlands",
+          "position": 13
+        },
+        {
+          "race": "Italy",
+          "position": 2
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 4
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 720
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 750
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 780
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 810
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "colapinto",
+      "name": "Franco Colapinto",
+      "abbreviation": "COL",
+      "number": 43,
+      "team": "Williams",
+      "color": "#6bbdff",
+      "grid": 12,
+      "probability": 0.003,
+      "factors": [
+        "Starting from P12",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 12
+        },
+        {
+          "race": "Netherlands",
+          "position": 1
+        },
+        {
+          "race": "Italy",
+          "position": 3
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 5
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 781
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 811
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 841
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 871
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "albon",
+      "name": "Alexander Albon",
+      "abbreviation": "ALB",
+      "number": 23,
+      "team": "Williams",
+      "color": "#6bbdff",
+      "grid": 11,
+      "probability": 0.003,
+      "factors": [
+        "Starting from P11",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 13
+        },
+        {
+          "race": "Netherlands",
+          "position": 2
+        },
+        {
+          "race": "Italy",
+          "position": 4
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 6
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 842
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 872
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 902
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 932
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "ricciardo",
+      "name": "Daniel Ricciardo",
+      "abbreviation": "RIC",
+      "number": 3,
+      "team": "RB",
+      "color": "#8b94fa",
+      "grid": 16,
+      "probability": 0.002,
+      "factors": [
+        "Starting from P16",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 1
+        },
+        {
+          "race": "Netherlands",
+          "position": 3
+        },
+        {
+          "race": "Italy",
+          "position": 5
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 7
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 903
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 933
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 963
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 993
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "stroll",
+      "name": "Lance Stroll",
+      "abbreviation": "STR",
+      "number": 18,
+      "team": "Aston Martin",
+      "color": "#64c9a4",
+      "grid": 17,
+      "probability": 0.002,
+      "factors": [
+        "Starting from P17",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 2
+        },
+        {
+          "race": "Netherlands",
+          "position": 4
+        },
+        {
+          "race": "Italy",
+          "position": 6
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 8
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 964
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 994
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 1024
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 1054
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "ocon",
+      "name": "Esteban Ocon",
+      "abbreviation": "OCO",
+      "number": 31,
+      "team": "Alpine",
+      "color": "#ed80bd",
+      "grid": 15,
+      "probability": 0.002,
+      "factors": [
+        "Starting from P15",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 3
+        },
+        {
+          "race": "Netherlands",
+          "position": 5
+        },
+        {
+          "race": "Italy",
+          "position": 7
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 9
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 1025
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 1055
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 1085
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 1115
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "gasly",
+      "name": "Pierre Gasly",
+      "abbreviation": "GAS",
+      "number": 10,
+      "team": "Alpine",
+      "color": "#ed80bd",
+      "grid": 18,
+      "probability": 0.001,
+      "factors": [
+        "Starting from P18",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 4
+        },
+        {
+          "race": "Netherlands",
+          "position": 6
+        },
+        {
+          "race": "Italy",
+          "position": 8
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 10
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 1086
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 1116
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 1146
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 1176
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "bottas",
+      "name": "Valtteri Bottas",
+      "abbreviation": "BOT",
+      "number": 77,
+      "team": "Kick Sauber",
+      "color": "#a6df61",
+      "grid": 19,
+      "probability": 0.001,
+      "factors": [
+        "Starting from P19",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 5
+        },
+        {
+          "race": "Netherlands",
+          "position": 7
+        },
+        {
+          "race": "Italy",
+          "position": 9
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 11
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 1147
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 1177
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 1207
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 1237
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "zhou",
+      "name": "Zhou Guanyu",
+      "abbreviation": "ZHO",
+      "number": 24,
+      "team": "Kick Sauber",
+      "color": "#a6df61",
+      "grid": 20,
+      "probability": 0.001,
+      "factors": [
+        "Starting from P20",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 6
+        },
+        {
+          "race": "Netherlands",
+          "position": 8
+        },
+        {
+          "race": "Italy",
+          "position": 10
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 12
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 1208
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 1238
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 1268
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 1298
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    },
+    {
+      "driver_id": "magnussen",
+      "name": "Kevin Magnussen",
+      "abbreviation": "MAG",
+      "number": 20,
+      "team": "Haas",
+      "color": "#d2d4dc",
+      "grid": 14,
+      "probability": 0.001,
+      "factors": [
+        "Starting from P14",
+        "Relative practice pace",
+        "Prior circuit conversion"
+      ],
+      "is_demo": true,
+      "cutoff": "2024-09-21T16:00:00Z",
+      "recent_results": [
+        {
+          "race": "Belgium",
+          "position": 7
+        },
+        {
+          "race": "Netherlands",
+          "position": 9
+        },
+        {
+          "race": "Italy",
+          "position": 11
+        },
+        {
+          "race": "Azerbaijan",
+          "position": 13
+        }
+      ],
+      "qualifying_gaps": [
+        {
+          "race": "Belgium",
+          "gap_ms": 1269
+        },
+        {
+          "race": "Netherlands",
+          "gap_ms": 1299
+        },
+        {
+          "race": "Italy",
+          "gap_ms": 1329
+        },
+        {
+          "race": "Azerbaijan",
+          "gap_ms": 1359
+        }
+      ],
+      "circuit_history": {
+        "starts": 5,
+        "wins": 0,
+        "podiums": 0,
+        "years_covered": "Illustrative prior seasons"
+      }
+    }
+  ]
+}

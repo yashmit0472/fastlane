@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-11-01T21:19:59.138899+00:00",
+  "race_id": "2026-19",
+  "findings": [
+    "The homepage and default session/circuit pages selected only the next strictly future race, advancing as soon as the current race start passed.",
+    "The ingestion target list excluded started races until final results appeared, leaving a gap while classifications were pending.",
+    "No Mexico pre-race prediction snapshots exist. The last saved Mexico update before restart was on 29 October.",
+    "During recovery Jolpica returned duplicate qualifying position 8; OpenF1 denied unauthenticated access and FastF1 returned no usable timing."
+  ],
+  "changes": [
+    "A separate current-race endpoint keeps the most recent unclassified race in focus for up to 24 hours; the next-race endpoint remains strictly future.",
+    "Recent unclassified races remain ingestion targets for seven days independently of the archive budget.",
+    "Past races can use verified qualifying participants when final race results are absent.",
+    "Race views distinguish results pending, completed and upcoming, with an explicit no-recorded-forecast message.",
+    "Archive classification validation rejects duplicate positions and preserves verified phases. Empty phase strings remain missing values."
+  ],
+  "regression_tests": 101,
+  "forecast_policy": "No post-start forecast generation, backdating or retrospective report-card predictions.",
+  "verification": {
+    "production_build": "passed including TypeScript",
+    "current_race": "2026-19 awaiting_classification",
+    "next_race": "2026-20 scheduled",
+    "homepage": "Mexico visible with no-recorded-forecast explanation",
+    "race_list": "Results pending category shown",
+    "mexico_prediction_count": 0,
+    "worker": "running, partial while free timing sources are unavailable or invalid"
+  }
+}

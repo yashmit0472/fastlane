@@ -1,0 +1,3008 @@
+{
+  "schema": "weather-reliability-v1",
+  "stage": "FP1",
+  "model_version": "conditions-v1-20261025T071156-FP1",
+  "created_at": "2026-10-25T07:12:48.653492+00:00",
+  "trained_until": "2024-12-08T13:00:00+00:00",
+  "selected_candidate": "weather_logistic",
+  "enabled": false,
+  "selection_rule": "Mean of three validation binary log losses improves by >0.001 over current serving and both matched no-weather ablations (logistic and CatBoost); no target worsens by more than 5% versus current serving.",
+  "features": [
+    "recent_finish",
+    "recent_win_rate",
+    "team_recent_finish",
+    "team_recent_win_rate",
+    "driver_circuit_win_rate",
+    "team_circuit_win_rate",
+    "driver_prior_starts",
+    "fp1_best_gap_pct",
+    "fp1_median_gap_pct",
+    "fp1_log_laps",
+    "fp1_lap_iqr_pct",
+    "fp1_teammate_gap_pct",
+    "fp1_soft_fraction",
+    "fp1_mean_tyre_age",
+    "fp1_long_run_gap_pct",
+    "fp1_long_run_laps",
+    "fp1_available",
+    "driver_nonfinish_rate",
+    "team_nonfinish_rate",
+    "circuit_nonfinish_rate",
+    "driver_status_samples",
+    "circuit_status_samples",
+    "forecast_temperature_c",
+    "forecast_precipitation_mm",
+    "forecast_wind_kmh",
+    "forecast_humidity_pct",
+    "rain_x_recent_finish",
+    "rain_x_recent_wins",
+    "rain_x_team_form",
+    "wind_x_recent_finish",
+    "temperature_x_recent_finish",
+    "rain_x_nonfinish_rate",
+    "rain_x_session_gap",
+    "driver_id",
+    "constructor_id",
+    "circuit_id"
+  ],
+  "candidates": {
+    "without_weather": {
+      "kind": "logistic",
+      "features": [
+        "recent_finish",
+        "recent_win_rate",
+        "team_recent_finish",
+        "team_recent_win_rate",
+        "driver_circuit_win_rate",
+        "team_circuit_win_rate",
+        "driver_prior_starts",
+        "fp1_best_gap_pct",
+        "fp1_median_gap_pct",
+        "fp1_log_laps",
+        "fp1_lap_iqr_pct",
+        "fp1_teammate_gap_pct",
+        "fp1_soft_fraction",
+        "fp1_mean_tyre_age",
+        "fp1_long_run_gap_pct",
+        "fp1_long_run_laps",
+        "fp1_available",
+        "driver_nonfinish_rate",
+        "team_nonfinish_rate",
+        "circuit_nonfinish_rate",
+        "driver_status_samples",
+        "circuit_status_samples",
+        "driver_id",
+        "constructor_id",
+        "circuit_id"
+      ],
+      "temperature": 1.4142135623730951,
+      "artifacts": {
+        "winner.pkl": "d93a2f2384115f2a44831699b61f79b0b9e284298e40a652982a3c58ea540fa4",
+        "podium.pkl": "7646d0a8ee381a9d59224038ac6c35f0dfdc296712113da09d6f58898c34b112",
+        "top10.pkl": "50f04bb4251d2f47e37c1641743dea670f97a6377f23d5e9769c6475363bdf10"
+      }
+    },
+    "weather_logistic": {
+      "kind": "logistic",
+      "features": [
+        "recent_finish",
+        "recent_win_rate",
+        "team_recent_finish",
+        "team_recent_win_rate",
+        "driver_circuit_win_rate",
+        "team_circuit_win_rate",
+        "driver_prior_starts",
+        "fp1_best_gap_pct",
+        "fp1_median_gap_pct",
+        "fp1_log_laps",
+        "fp1_lap_iqr_pct",
+        "fp1_teammate_gap_pct",
+        "fp1_soft_fraction",
+        "fp1_mean_tyre_age",
+        "fp1_long_run_gap_pct",
+        "fp1_long_run_laps",
+        "fp1_available",
+        "driver_nonfinish_rate",
+        "team_nonfinish_rate",
+        "circuit_nonfinish_rate",
+        "driver_status_samples",
+        "circuit_status_samples",
+        "forecast_temperature_c",
+        "forecast_precipitation_mm",
+        "forecast_wind_kmh",
+        "forecast_humidity_pct",
+        "rain_x_recent_finish",
+        "rain_x_recent_wins",
+        "rain_x_team_form",
+        "wind_x_recent_finish",
+        "temperature_x_recent_finish",
+        "rain_x_nonfinish_rate",
+        "rain_x_session_gap",
+        "driver_id",
+        "constructor_id",
+        "circuit_id"
+      ],
+      "temperature": 1.4142135623730951,
+      "artifacts": {
+        "winner.pkl": "796263c3353ebeffad9caf9ee7882af5a6635a5fc9e99e7d9bdfc443894f86ee",
+        "podium.pkl": "778ad59fbd729c764b5b8e890229732fa8ae88340c628651f4528ec3223167a3",
+        "top10.pkl": "f72c94ffcb9db280e7f27d895813664c2911a3eb7a6134d4ea1557e5da0e61ed"
+      }
+    },
+    "weather_catboost": {
+      "kind": "catboost",
+      "features": [
+        "recent_finish",
+        "recent_win_rate",
+        "team_recent_finish",
+        "team_recent_win_rate",
+        "driver_circuit_win_rate",
+        "team_circuit_win_rate",
+        "driver_prior_starts",
+        "fp1_best_gap_pct",
+        "fp1_median_gap_pct",
+        "fp1_log_laps",
+        "fp1_lap_iqr_pct",
+        "fp1_teammate_gap_pct",
+        "fp1_soft_fraction",
+        "fp1_mean_tyre_age",
+        "fp1_long_run_gap_pct",
+        "fp1_long_run_laps",
+        "fp1_available",
+        "driver_nonfinish_rate",
+        "team_nonfinish_rate",
+        "circuit_nonfinish_rate",
+        "driver_status_samples",
+        "circuit_status_samples",
+        "forecast_temperature_c",
+        "forecast_precipitation_mm",
+        "forecast_wind_kmh",
+        "forecast_humidity_pct",
+        "rain_x_recent_finish",
+        "rain_x_recent_wins",
+        "rain_x_team_form",
+        "wind_x_recent_finish",
+        "temperature_x_recent_finish",
+        "rain_x_nonfinish_rate",
+        "rain_x_session_gap",
+        "driver_id",
+        "constructor_id",
+        "circuit_id"
+      ],
+      "temperature": 1.5157165665103984,
+      "artifacts": {
+        "winner.cbm": "32e8da9a57636c5a9e8d609c1a27d67232ec0fa14ddc82dced1ddb923c411f52",
+        "podium.cbm": "2cb5b3d9eea5c7a6b9c437a39f31d1bcf2741efd25c5c6fa93dff9641700984e",
+        "top10.cbm": "4f545daf6f05bf48cab5084c803097fd89c5502b2dd79f443f5c9d59a02f7cc6"
+      }
+    },
+    "without_weather_catboost": {
+      "kind": "catboost",
+      "features": [
+        "recent_finish",
+        "recent_win_rate",
+        "team_recent_finish",
+        "team_recent_win_rate",
+        "driver_circuit_win_rate",
+        "team_circuit_win_rate",
+        "driver_prior_starts",
+        "fp1_best_gap_pct",
+        "fp1_median_gap_pct",
+        "fp1_log_laps",
+        "fp1_lap_iqr_pct",
+        "fp1_teammate_gap_pct",
+        "fp1_soft_fraction",
+        "fp1_mean_tyre_age",
+        "fp1_long_run_gap_pct",
+        "fp1_long_run_laps",
+        "fp1_available",
+        "driver_nonfinish_rate",
+        "team_nonfinish_rate",
+        "circuit_nonfinish_rate",
+        "driver_status_samples",
+        "circuit_status_samples",
+        "driver_id",
+        "constructor_id",
+        "circuit_id"
+      ],
+      "temperature": 1.4142135623730951,
+      "artifacts": {
+        "winner.cbm": "9bb21c5101c78c0743523c6a2fd03212e1be91df13d7730c49caf3523bddca7d",
+        "podium.cbm": "0f7b6c7e6aa0629c3797b3c328cd94fdb42d0ae40731017d677735d982eab41d",
+        "top10.cbm": "cae54554a0fe69a80175a3a96f2227f5a95c9cc475013c27f0ffcc6286299b11"
+      }
+    }
+  },
+  "validation": {
+    "current_serving": {
+      "winner": {
+        "races": 15,
+        "driver_predictions": 299,
+        "binary_log_loss": 0.14424174487179175,
+        "brier": 0.04051955094777593,
+        "top_k_recall": 0.26666666666666666,
+        "ece": 0.024431490015612053,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 264,
+            "mean_probability": 0.019839598796794543,
+            "observed_rate": 0.022849195310947742
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 13,
+            "mean_probability": 0.14552157266738563,
+            "observed_rate": 0.3064516129032258
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 9,
+            "mean_probability": 0.2402703041134218,
+            "observed_rate": 0.1111111111111111
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 6,
+            "mean_probability": 0.35722433796008335,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 3,
+            "mean_probability": 0.45298157918683707,
+            "observed_rate": 0.33333333333333337
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 4,
+            "mean_probability": 0.5510156193471047,
+            "observed_rate": 0.7402597402597403
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          }
+        ],
+        "brier_interval_95": [
+          0.030634092862816927,
+          0.04843005708639366
+        ],
+        "log_loss_interval_95": [
+          0.1120121595808868,
+          0.17514917922167664
+        ]
+      },
+      "podium": {
+        "races": 15,
+        "driver_predictions": 299,
+        "binary_log_loss": 0.29700329530412733,
+        "brier": 0.10010360065549295,
+        "top_k_recall": 0.4222222222222221,
+        "ece": 0.0678455444177223,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 177,
+            "mean_probability": 0.01891652271593497,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 39,
+            "mean_probability": 0.14109080179928038,
+            "observed_rate": 0.3082099596231495
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 32,
+            "mean_probability": 0.24579678030049368,
+            "observed_rate": 0.28314238952536824
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 17,
+            "mean_probability": 0.34199298513804605,
+            "observed_rate": 0.4104938271604938
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 9,
+            "mean_probability": 0.46342982287548307,
+            "observed_rate": 0.3313953488372093
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 5,
+            "mean_probability": 0.5454965549926065,
+            "observed_rate": 0.8
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 6,
+            "mean_probability": 0.6542778186166835,
+            "observed_rate": 0.33333333333333337
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 6,
+            "mean_probability": 0.7530520178632855,
+            "observed_rate": 0.5
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 5,
+            "mean_probability": 0.8571655275346375,
+            "observed_rate": 0.6
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 3,
+            "mean_probability": 0.9475723782388595,
+            "observed_rate": 0.6551724137931035
+          }
+        ],
+        "brier_interval_95": [
+          0.08220498669688192,
+          0.11963447070305959
+        ],
+        "log_loss_interval_95": [
+          0.25004917195527515,
+          0.3498708554084262
+        ]
+      },
+      "top10": {
+        "races": 15,
+        "driver_predictions": 299,
+        "binary_log_loss": 0.48779871139362674,
+        "brier": 0.15143473470983562,
+        "top_k_recall": 0.8000000000000002,
+        "ece": 0.09535331017024773,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 18,
+            "mean_probability": 0.052710775340829644,
+            "observed_rate": 0.16909620991253643
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 41,
+            "mean_probability": 0.15629751298659036,
+            "observed_rate": 0.22023047375160054
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 49,
+            "mean_probability": 0.24798757782971528,
+            "observed_rate": 0.2047159699892819
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 29,
+            "mean_probability": 0.3410437240459355,
+            "observed_rate": 0.17328519855595673
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 22,
+            "mean_probability": 0.4543121347064856,
+            "observed_rate": 0.2267303102625299
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 22,
+            "mean_probability": 0.5495001784318067,
+            "observed_rate": 0.5000000000000002
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 17,
+            "mean_probability": 0.6628376059295449,
+            "observed_rate": 0.882716049382716
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 27,
+            "mean_probability": 0.7530220743628394,
+            "observed_rate": 0.8875968992248061
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 35,
+            "mean_probability": 0.8525167233302774,
+            "observed_rate": 0.9144144144144143
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 39,
+            "mean_probability": 0.9506712921576042,
+            "observed_rate": 0.9206989247311826
+          }
+        ],
+        "brier_interval_95": [
+          0.12450624519484708,
+          0.1863062718845182
+        ],
+        "log_loss_interval_95": [
+          0.4086941736469583,
+          0.6056916310381417
+        ]
+      }
+    },
+    "without_weather": {
+      "winner": {
+        "races": 15,
+        "driver_predictions": 299,
+        "binary_log_loss": 0.1460246970433476,
+        "brier": 0.041265683226819706,
+        "top_k_recall": 0.26666666666666666,
+        "ece": 0.023457681761045582,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 262,
+            "mean_probability": 0.021199445056484943,
+            "observed_rate": 0.01921921921921922
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 17,
+            "mean_probability": 0.145203036599385,
+            "observed_rate": 0.29320987654320985
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 7,
+            "mean_probability": 0.2348694507029465,
+            "observed_rate": 0.14285714285714285
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 7,
+            "mean_probability": 0.3606959905198212,
+            "observed_rate": 0.14285714285714285
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 4,
+            "mean_probability": 0.45133715947025366,
+            "observed_rate": 0.24675324675324675
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 2,
+            "mean_probability": 0.5026269242847202,
+            "observed_rate": 1.0
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          }
+        ],
+        "brier_interval_95": [
+          0.032687910936048,
+          0.04826495639580562
+        ],
+        "log_loss_interval_95": [
+          0.11695205531649058,
+          0.17459370512535632
+        ]
+      },
+      "podium": {
+        "races": 15,
+        "driver_predictions": 299,
+        "binary_log_loss": 0.2958247121276001,
+        "brier": 0.09936893042454097,
+        "top_k_recall": 0.4888888888888888,
+        "ece": 0.05337636107962476,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 187,
+            "mean_probability": 0.021599903446400174,
+            "observed_rate": 0.010668163952835485
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 25,
+            "mean_probability": 0.14232472599952872,
+            "observed_rate": 0.36041666666666666
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 30,
+            "mean_probability": 0.23914260659367736,
+            "observed_rate": 0.23426573426573438
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 25,
+            "mean_probability": 0.34877817270254297,
+            "observed_rate": 0.39915966386554624
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 8,
+            "mean_probability": 0.44904998176227306,
+            "observed_rate": 0.5
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 4,
+            "mean_probability": 0.5362012338833722,
+            "observed_rate": 0.7402597402597403
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 5,
+            "mean_probability": 0.6556645072483457,
+            "observed_rate": 0.4
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 6,
+            "mean_probability": 0.7536802740347899,
+            "observed_rate": 0.33333333333333337
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 6,
+            "mean_probability": 0.8608993389523492,
+            "observed_rate": 0.6666666666666667
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 3,
+            "mean_probability": 0.9317930682783292,
+            "observed_rate": 0.6551724137931035
+          }
+        ],
+        "brier_interval_95": [
+          0.08197075243314353,
+          0.11883056305178363
+        ],
+        "log_loss_interval_95": [
+          0.25228466603780564,
+          0.34618890502509664
+        ]
+      },
+      "top10": {
+        "races": 15,
+        "driver_predictions": 299,
+        "binary_log_loss": 0.4857726755635513,
+        "brier": 0.14896675535299703,
+        "top_k_recall": 0.8000000000000002,
+        "ece": 0.09679058513458925,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 28,
+            "mean_probability": 0.0599444013993071,
+            "observed_rate": 0.21575984990619143
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 45,
+            "mean_probability": 0.15738827728177873,
+            "observed_rate": 0.17927823050058214
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 45,
+            "mean_probability": 0.24804312357802932,
+            "observed_rate": 0.17736289381563597
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 17,
+            "mean_probability": 0.3462064215612445,
+            "observed_rate": 0.1764705882352941
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 18,
+            "mean_probability": 0.4465249973991345,
+            "observed_rate": 0.27826086956521734
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 23,
+            "mean_probability": 0.5396587087428854,
+            "observed_rate": 0.4360730593607308
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 13,
+            "mean_probability": 0.6597408018561621,
+            "observed_rate": 0.6923076923076923
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 29,
+            "mean_probability": 0.7485928821658954,
+            "observed_rate": 0.9657039711191333
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 37,
+            "mean_probability": 0.8529411368186723,
+            "observed_rate": 0.9177304964539007
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 44,
+            "mean_probability": 0.9523645983681065,
+            "observed_rate": 0.8843861740166865
+          }
+        ],
+        "brier_interval_95": [
+          0.11999215050906088,
+          0.18516817980204123
+        ],
+        "log_loss_interval_95": [
+          0.39933301718304776,
+          0.6151994829355654
+        ]
+      }
+    },
+    "weather_logistic": {
+      "winner": {
+        "races": 15,
+        "driver_predictions": 299,
+        "binary_log_loss": 0.14608194810425623,
+        "brier": 0.041068767473817866,
+        "top_k_recall": 0.26666666666666666,
+        "ece": 0.024490235773624733,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 261,
+            "mean_probability": 0.01989315965752237,
+            "observed_rate": 0.019292604501607715
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 21,
+            "mean_probability": 0.14598315651932486,
+            "observed_rate": 0.2850000000000001
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 2,
+            "mean_probability": 0.22429578190282856,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 7,
+            "mean_probability": 0.3281022905515174,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 4,
+            "mean_probability": 0.4427363834649982,
+            "observed_rate": 0.25
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 4,
+            "mean_probability": 0.5559683823044104,
+            "observed_rate": 0.7402597402597403
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          }
+        ],
+        "brier_interval_95": [
+          0.03168061060611865,
+          0.04890472182163188
+        ],
+        "log_loss_interval_95": [
+          0.11431064148213887,
+          0.17687922696251826
+        ]
+      },
+      "podium": {
+        "races": 15,
+        "driver_predictions": 299,
+        "binary_log_loss": 0.29952170159312536,
+        "brier": 0.09942531412027568,
+        "top_k_recall": 0.46666666666666656,
+        "ece": 0.05548816651504146,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 186,
+            "mean_probability": 0.02000120086311306,
+            "observed_rate": 0.010725373976855771
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 31,
+            "mean_probability": 0.14452514298212438,
+            "observed_rate": 0.29124579124579136
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 25,
+            "mean_probability": 0.24494631972351888,
+            "observed_rate": 0.3207547169811321
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 22,
+            "mean_probability": 0.34109984634567825,
+            "observed_rate": 0.3627684964200479
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 9,
+            "mean_probability": 0.42131151678367096,
+            "observed_rate": 0.4444444444444444
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 7,
+            "mean_probability": 0.5463156045058555,
+            "observed_rate": 0.708955223880597
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 3,
+            "mean_probability": 0.6374751557471103,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 6,
+            "mean_probability": 0.7435546798792267,
+            "observed_rate": 0.5
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 4,
+            "mean_probability": 0.872048183867313,
+            "observed_rate": 0.5
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 6,
+            "mean_probability": 0.9469568743663099,
+            "observed_rate": 0.6608695652173914
+          }
+        ],
+        "brier_interval_95": [
+          0.08128135144584601,
+          0.11924858301000751
+        ],
+        "log_loss_interval_95": [
+          0.24989243676234735,
+          0.35920665175972827
+        ]
+      },
+      "top10": {
+        "races": 15,
+        "driver_predictions": 299,
+        "binary_log_loss": 0.48137489696566976,
+        "brier": 0.14623908027173282,
+        "top_k_recall": 0.8000000000000002,
+        "ece": 0.09316604295339505,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 30,
+            "mean_probability": 0.06110449259342845,
+            "observed_rate": 0.20140105078809115
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 45,
+            "mean_probability": 0.15391817056879184,
+            "observed_rate": 0.17927823050058214
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 42,
+            "mean_probability": 0.2453802353978894,
+            "observed_rate": 0.19
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 22,
+            "mean_probability": 0.345566340372671,
+            "observed_rate": 0.13636363636363638
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 17,
+            "mean_probability": 0.45846643553394556,
+            "observed_rate": 0.29447852760736193
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 18,
+            "mean_probability": 0.5299368369078438,
+            "observed_rate": 0.446064139941691
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 14,
+            "mean_probability": 0.6605773720705145,
+            "observed_rate": 0.7142857142857142
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 27,
+            "mean_probability": 0.7509955103621778,
+            "observed_rate": 0.963106796116505
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 35,
+            "mean_probability": 0.8531349326139313,
+            "observed_rate": 0.9131736526946108
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 49,
+            "mean_probability": 0.9513318102565647,
+            "observed_rate": 0.8961456102783726
+          }
+        ],
+        "brier_interval_95": [
+          0.11785118831760942,
+          0.18264104508919243
+        ],
+        "log_loss_interval_95": [
+          0.3921161999013372,
+          0.6124517978086869
+        ]
+      }
+    },
+    "weather_catboost": {
+      "winner": {
+        "races": 15,
+        "driver_predictions": 299,
+        "binary_log_loss": 0.1546233152760095,
+        "brier": 0.04264383637731372,
+        "top_k_recall": 0.26666666666666666,
+        "ece": 0.017877614255152757,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 269,
+            "mean_probability": 0.02583567819756588,
+            "observed_rate": 0.02613104524180967
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 14,
+            "mean_probability": 0.13318384325285487,
+            "observed_rate": 0.2846441947565543
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 4,
+            "mean_probability": 0.2562589620293059,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 5,
+            "mean_probability": 0.3805542482912628,
+            "observed_rate": 0.2
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 6,
+            "mean_probability": 0.4549814428285926,
+            "observed_rate": 0.3304347826086957
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 1,
+            "mean_probability": 0.5264923909044507,
+            "observed_rate": 1.0
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          }
+        ],
+        "brier_interval_95": [
+          0.03380542955861696,
+          0.05018407491880664
+        ],
+        "log_loss_interval_95": [
+          0.12562447296142867,
+          0.18158587473531926
+        ]
+      },
+      "podium": {
+        "races": 15,
+        "driver_predictions": 299,
+        "binary_log_loss": 0.306736562729613,
+        "brier": 0.10090208919589068,
+        "top_k_recall": 0.46666666666666673,
+        "ece": 0.06548884056240532,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 188,
+            "mean_probability": 0.0305858863767973,
+            "observed_rate": 0.01617852161785216
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 36,
+            "mean_probability": 0.14251863759870692,
+            "observed_rate": 0.25109489051094896
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 22,
+            "mean_probability": 0.2512448453293184,
+            "observed_rate": 0.4558472553699286
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 21,
+            "mean_probability": 0.3460682954604468,
+            "observed_rate": 0.2850000000000001
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 9,
+            "mean_probability": 0.43740150713137094,
+            "observed_rate": 0.5491329479768786
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 5,
+            "mean_probability": 0.535247830419921,
+            "observed_rate": 0.6
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 3,
+            "mean_probability": 0.6480867162355541,
+            "observed_rate": 0.6666666666666667
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 3,
+            "mean_probability": 0.7426018192696641,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 7,
+            "mean_probability": 0.8417389515500926,
+            "observed_rate": 0.5714285714285714
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 5,
+            "mean_probability": 0.9300613594096351,
+            "observed_rate": 0.59375
+          }
+        ],
+        "brier_interval_95": [
+          0.08279696446384002,
+          0.12232695131390565
+        ],
+        "log_loss_interval_95": [
+          0.2568311671096112,
+          0.364943972065691
+        ]
+      },
+      "top10": {
+        "races": 15,
+        "driver_predictions": 299,
+        "binary_log_loss": 0.4814721001140602,
+        "brier": 0.1510486795826386,
+        "top_k_recall": 0.7933333333333334,
+        "ece": 0.10688866865549158,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 20,
+            "mean_probability": 0.06339524017492182,
+            "observed_rate": 0.15
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 37,
+            "mean_probability": 0.14215360008084346,
+            "observed_rate": 0.27195467422096326
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 31,
+            "mean_probability": 0.2531139312770572,
+            "observed_rate": 0.06429780033840951
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 45,
+            "mean_probability": 0.3516798361053329,
+            "observed_rate": 0.15537383177570097
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 33,
+            "mean_probability": 0.4440064434067428,
+            "observed_rate": 0.4253968253968254
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 14,
+            "mean_probability": 0.5512281532750838,
+            "observed_rate": 0.5018587360594795
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 18,
+            "mean_probability": 0.6590909401515214,
+            "observed_rate": 0.9446064139941692
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 34,
+            "mean_probability": 0.7507561354894786,
+            "observed_rate": 0.852080123266564
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 38,
+            "mean_probability": 0.848678356474369,
+            "observed_rate": 0.8674033149171272
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 29,
+            "mean_probability": 0.9586315342685089,
+            "observed_rate": 0.9637681159420288
+          }
+        ],
+        "brier_interval_95": [
+          0.12356316952428731,
+          0.18326060050736026
+        ],
+        "log_loss_interval_95": [
+          0.4061043957710946,
+          0.5779460458130425
+        ]
+      }
+    },
+    "without_weather_catboost": {
+      "winner": {
+        "races": 15,
+        "driver_predictions": 299,
+        "binary_log_loss": 0.1524265885810055,
+        "brier": 0.04227739032893896,
+        "top_k_recall": 0.26666666666666666,
+        "ece": 0.02072966392694824,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 267,
+            "mean_probability": 0.024285085976121577,
+            "observed_rate": 0.03005893909626719
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 14,
+            "mean_probability": 0.13720019189834903,
+            "observed_rate": 0.21428571428571427
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 5,
+            "mean_probability": 0.24400153071097883,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 6,
+            "mean_probability": 0.35415014078409085,
+            "observed_rate": 0.16666666666666669
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 6,
+            "mean_probability": 0.45647611985483494,
+            "observed_rate": 0.33333333333333337
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 1,
+            "mean_probability": 0.516532586567255,
+            "observed_rate": 1.0
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          }
+        ],
+        "brier_interval_95": [
+          0.03384230481455643,
+          0.04936905784359965
+        ],
+        "log_loss_interval_95": [
+          0.12331230147824122,
+          0.1821180735371707
+        ]
+      },
+      "podium": {
+        "races": 15,
+        "driver_predictions": 299,
+        "binary_log_loss": 0.3087551773754293,
+        "brier": 0.10171923720273651,
+        "top_k_recall": 0.4222222222222222,
+        "ece": 0.07625489013046609,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 186,
+            "mean_probability": 0.03130606122712459,
+            "observed_rate": 0.010998307952622674
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 42,
+            "mean_probability": 0.14899360847855675,
+            "observed_rate": 0.28625000000000006
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 24,
+            "mean_probability": 0.25486057512300947,
+            "observed_rate": 0.41612200435729846
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 12,
+            "mean_probability": 0.3370853485036796,
+            "observed_rate": 0.33333333333333337
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 13,
+            "mean_probability": 0.45537304025890873,
+            "observed_rate": 0.3830645161290322
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 4,
+            "mean_probability": 0.5591798995245377,
+            "observed_rate": 1.0
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 3,
+            "mean_probability": 0.6366172344820158,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 4,
+            "mean_probability": 0.7672222725029098,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 6,
+            "mean_probability": 0.842187381546752,
+            "observed_rate": 0.8333333333333333
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 5,
+            "mean_probability": 0.9158513931809414,
+            "observed_rate": 0.59375
+          }
+        ],
+        "brier_interval_95": [
+          0.08416265763803261,
+          0.1200503058419468
+        ],
+        "log_loss_interval_95": [
+          0.26170094203239314,
+          0.3601514334089845
+        ]
+      },
+      "top10": {
+        "races": 15,
+        "driver_predictions": 299,
+        "binary_log_loss": 0.479287991521724,
+        "brier": 0.15113004596981333,
+        "top_k_recall": 0.8066666666666666,
+        "ece": 0.10500594337595655,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 20,
+            "mean_probability": 0.06422230250415084,
+            "observed_rate": 0.15
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 39,
+            "mean_probability": 0.14359556574476112,
+            "observed_rate": 0.2836021505376345
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 31,
+            "mean_probability": 0.25424379947204445,
+            "observed_rate": 0.03220338983050849
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 48,
+            "mean_probability": 0.3449982120337752,
+            "observed_rate": 0.24945295404814002
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 24,
+            "mean_probability": 0.4268730525797374,
+            "observed_rate": 0.2505446623093682
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 13,
+            "mean_probability": 0.5577864172053822,
+            "observed_rate": 0.6935483870967741
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 21,
+            "mean_probability": 0.654702894245199,
+            "observed_rate": 0.8089330024813898
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 35,
+            "mean_probability": 0.7473838753656553,
+            "observed_rate": 0.7994011976047903
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 34,
+            "mean_probability": 0.847249991381797,
+            "observed_rate": 0.8823529411764706
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 34,
+            "mean_probability": 0.9548476303830181,
+            "observed_rate": 0.969135802469136
+          }
+        ],
+        "brier_interval_95": [
+          0.12482947024774606,
+          0.1811586849264796
+        ],
+        "log_loss_interval_95": [
+          0.4060095474867893,
+          0.5618274623195172
+        ]
+      }
+    }
+  },
+  "benchmark": {
+    "current_serving": {
+      "winner": {
+        "races": 14,
+        "driver_predictions": 280,
+        "binary_log_loss": 0.17164271229599462,
+        "brier": 0.045840720488667504,
+        "top_k_recall": 0.21428571428571427,
+        "ece": 0.019183832803218764,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 236,
+            "mean_probability": 0.02251806528622615,
+            "observed_rate": 0.033898305084745756
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 29,
+            "mean_probability": 0.15062315557073827,
+            "observed_rate": 0.10344827586206896
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 11,
+            "mean_probability": 0.2538401653491892,
+            "observed_rate": 0.18181818181818182
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 3,
+            "mean_probability": 0.3582282273428533,
+            "observed_rate": 0.3333333333333333
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 1,
+            "mean_probability": 0.45073858002957645,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          }
+        ],
+        "brier_interval_95": [
+          0.0402581804416776,
+          0.050101992670563235
+        ],
+        "log_loss_interval_95": [
+          0.1459279057307516,
+          0.19536558755970593
+        ]
+      },
+      "podium": {
+        "races": 14,
+        "driver_predictions": 280,
+        "binary_log_loss": 0.3242020410643652,
+        "brier": 0.10515400236149777,
+        "top_k_recall": 0.40476190476190477,
+        "ece": 0.06436120510259458,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 178,
+            "mean_probability": 0.030724217632139752,
+            "observed_rate": 0.022471910112359546
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 25,
+            "mean_probability": 0.14775218886709066,
+            "observed_rate": 0.16
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 23,
+            "mean_probability": 0.25011427637644984,
+            "observed_rate": 0.5217391304347826
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 16,
+            "mean_probability": 0.34918592031357865,
+            "observed_rate": 0.375
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 16,
+            "mean_probability": 0.4454531303161655,
+            "observed_rate": 0.5625
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 8,
+            "mean_probability": 0.55036198249529,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 6,
+            "mean_probability": 0.6381288995375397,
+            "observed_rate": 0.6666666666666666
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 6,
+            "mean_probability": 0.7468786635967684,
+            "observed_rate": 0.5
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 2,
+            "mean_probability": 0.8287450671497174,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          }
+        ],
+        "brier_interval_95": [
+          0.09286277985007686,
+          0.11902960702538526
+        ],
+        "log_loss_interval_95": [
+          0.2842617373507172,
+          0.37396958498608585
+        ]
+      },
+      "top10": {
+        "races": 14,
+        "driver_predictions": 280,
+        "binary_log_loss": 0.6090493650288262,
+        "brier": 0.20319418413112383,
+        "top_k_recall": 0.6714285714285715,
+        "ece": 0.08301921647276922,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 4,
+            "mean_probability": 0.08875058557949747,
+            "observed_rate": 0.5
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 27,
+            "mean_probability": 0.15229839211564147,
+            "observed_rate": 0.33333333333333337
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 50,
+            "mean_probability": 0.2622134326099086,
+            "observed_rate": 0.32
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 52,
+            "mean_probability": 0.34469046342040743,
+            "observed_rate": 0.3461538461538462
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 35,
+            "mean_probability": 0.43840710466047716,
+            "observed_rate": 0.22857142857142856
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 13,
+            "mean_probability": 0.5348606625671797,
+            "observed_rate": 0.3846153846153846
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 15,
+            "mean_probability": 0.658586708764688,
+            "observed_rate": 0.7333333333333334
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 20,
+            "mean_probability": 0.7498437202272532,
+            "observed_rate": 0.8000000000000002
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 35,
+            "mean_probability": 0.8604314296756883,
+            "observed_rate": 0.8571428571428572
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 29,
+            "mean_probability": 0.9382811376223641,
+            "observed_rate": 0.8620689655172413
+          }
+        ],
+        "brier_interval_95": [
+          0.17506922726195082,
+          0.24053002322355213
+        ],
+        "log_loss_interval_95": [
+          0.5357275347210738,
+          0.7118802235887413
+        ]
+      }
+    },
+    "without_weather": {
+      "winner": {
+        "races": 14,
+        "driver_predictions": 280,
+        "binary_log_loss": 0.16006157735105658,
+        "brier": 0.043780878782565404,
+        "top_k_recall": 0.2857142857142857,
+        "ece": 0.004879778067816415,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 242,
+            "mean_probability": 0.026613881235804746,
+            "observed_rate": 0.02892561983471074
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 21,
+            "mean_probability": 0.1373225792804827,
+            "observed_rate": 0.14285714285714288
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 10,
+            "mean_probability": 0.22828591564422132,
+            "observed_rate": 0.2
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 6,
+            "mean_probability": 0.33208294109180264,
+            "observed_rate": 0.3333333333333333
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 1,
+            "mean_probability": 0.4003097730520844,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          }
+        ],
+        "brier_interval_95": [
+          0.03896294138572632,
+          0.047625888539145775
+        ],
+        "log_loss_interval_95": [
+          0.13874669988867153,
+          0.180249074441067
+        ]
+      },
+      "podium": {
+        "races": 14,
+        "driver_predictions": 280,
+        "binary_log_loss": 0.29692564261900073,
+        "brier": 0.09406567989853132,
+        "top_k_recall": 0.5238095238095238,
+        "ece": 0.06590752063256926,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 170,
+            "mean_probability": 0.040431409647079884,
+            "observed_rate": 0.02352941176470588
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 39,
+            "mean_probability": 0.1448800286806678,
+            "observed_rate": 0.12820512820512825
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 24,
+            "mean_probability": 0.25012363988423164,
+            "observed_rate": 0.37499999999999994
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 17,
+            "mean_probability": 0.34679827742199526,
+            "observed_rate": 0.5882352941176471
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 7,
+            "mean_probability": 0.454688587511939,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 12,
+            "mean_probability": 0.5523024146490007,
+            "observed_rate": 0.6666666666666667
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 6,
+            "mean_probability": 0.6476427232100804,
+            "observed_rate": 0.5
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 3,
+            "mean_probability": 0.7489266874189388,
+            "observed_rate": 1.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 2,
+            "mean_probability": 0.8173578390830077,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          }
+        ],
+        "brier_interval_95": [
+          0.0810917865398306,
+          0.10618617799736034
+        ],
+        "log_loss_interval_95": [
+          0.26218073173350903,
+          0.3338177256669764
+        ]
+      },
+      "top10": {
+        "races": 14,
+        "driver_predictions": 280,
+        "binary_log_loss": 0.6088971346573465,
+        "brier": 0.20458869988375644,
+        "top_k_recall": 0.6928571428571428,
+        "ece": 0.09686357706686102,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 12,
+            "mean_probability": 0.07270600012961012,
+            "observed_rate": 0.41666666666666663
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 18,
+            "mean_probability": 0.15555732795333943,
+            "observed_rate": 0.38888888888888895
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 41,
+            "mean_probability": 0.25422415551721217,
+            "observed_rate": 0.29268292682926833
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 52,
+            "mean_probability": 0.35359906212456527,
+            "observed_rate": 0.28846153846153855
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 33,
+            "mean_probability": 0.44144649212122694,
+            "observed_rate": 0.3333333333333333
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 27,
+            "mean_probability": 0.5506094671155506,
+            "observed_rate": 0.37037037037037035
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 19,
+            "mean_probability": 0.6475936873687349,
+            "observed_rate": 0.6315789473684211
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 25,
+            "mean_probability": 0.7418159780559211,
+            "observed_rate": 0.84
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 30,
+            "mean_probability": 0.8599335159440096,
+            "observed_rate": 0.9
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 23,
+            "mean_probability": 0.9319686802937752,
+            "observed_rate": 0.8695652173913043
+          }
+        ],
+        "brier_interval_95": [
+          0.18206529479455563,
+          0.2365084212899496
+        ],
+        "log_loss_interval_95": [
+          0.5477621018793899,
+          0.6926923203963559
+        ]
+      }
+    },
+    "weather_logistic": {
+      "winner": {
+        "races": 14,
+        "driver_predictions": 280,
+        "binary_log_loss": 0.1593072757620078,
+        "brier": 0.042977760455372105,
+        "top_k_recall": 0.2857142857142857,
+        "ece": 0.010174895656617413,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 238,
+            "mean_probability": 0.023970108981908402,
+            "observed_rate": 0.021008403361344536
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 28,
+            "mean_probability": 0.13969427128020928,
+            "observed_rate": 0.17857142857142855
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 7,
+            "mean_probability": 0.2535197475026688,
+            "observed_rate": 0.2857142857142857
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 5,
+            "mean_probability": 0.3439198908464476,
+            "observed_rate": 0.2
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 2,
+            "mean_probability": 0.44471838985451023,
+            "observed_rate": 0.5
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          }
+        ],
+        "brier_interval_95": [
+          0.036887690834029284,
+          0.047567438264095104
+        ],
+        "log_loss_interval_95": [
+          0.13299126597275185,
+          0.18467995448825392
+        ]
+      },
+      "podium": {
+        "races": 14,
+        "driver_predictions": 280,
+        "binary_log_loss": 0.3024423624259955,
+        "brier": 0.094984218060478,
+        "top_k_recall": 0.5238095238095238,
+        "ece": 0.03923627292218581,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 170,
+            "mean_probability": 0.03666132295765979,
+            "observed_rate": 0.02352941176470588
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 41,
+            "mean_probability": 0.1443043468698733,
+            "observed_rate": 0.1707317073170732
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 21,
+            "mean_probability": 0.23677891387328792,
+            "observed_rate": 0.28571428571428575
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 14,
+            "mean_probability": 0.35851338637415353,
+            "observed_rate": 0.5714285714285714
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 13,
+            "mean_probability": 0.4374835112975534,
+            "observed_rate": 0.30769230769230765
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 7,
+            "mean_probability": 0.5527795112853587,
+            "observed_rate": 0.5714285714285714
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 6,
+            "mean_probability": 0.6478232388792606,
+            "observed_rate": 0.6666666666666666
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 5,
+            "mean_probability": 0.7685005912757817,
+            "observed_rate": 0.8
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 3,
+            "mean_probability": 0.8577892198118843,
+            "observed_rate": 0.3333333333333333
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          }
+        ],
+        "brier_interval_95": [
+          0.07935594170349015,
+          0.11029279943590165
+        ],
+        "log_loss_interval_95": [
+          0.25586011647293755,
+          0.3489683358889163
+        ]
+      },
+      "top10": {
+        "races": 14,
+        "driver_predictions": 280,
+        "binary_log_loss": 0.6199694296937165,
+        "brier": 0.20811022664711995,
+        "top_k_recall": 0.6928571428571428,
+        "ece": 0.09214788677240221,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 13,
+            "mean_probability": 0.06885855530468346,
+            "observed_rate": 0.3846153846153846
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 20,
+            "mean_probability": 0.14946077964470467,
+            "observed_rate": 0.44999999999999996
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 38,
+            "mean_probability": 0.2476251739131581,
+            "observed_rate": 0.21052631578947376
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 48,
+            "mean_probability": 0.35434279060016177,
+            "observed_rate": 0.3125
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 38,
+            "mean_probability": 0.4414782035803752,
+            "observed_rate": 0.42105263157894746
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 23,
+            "mean_probability": 0.5444731334204759,
+            "observed_rate": 0.2608695652173913
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 26,
+            "mean_probability": 0.6472439776226083,
+            "observed_rate": 0.6923076923076922
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 23,
+            "mean_probability": 0.7559380705139516,
+            "observed_rate": 0.8260869565217392
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 20,
+            "mean_probability": 0.8629967277651719,
+            "observed_rate": 0.8500000000000001
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 31,
+            "mean_probability": 0.933016297761287,
+            "observed_rate": 0.8709677419354839
+          }
+        ],
+        "brier_interval_95": [
+          0.18225764014775314,
+          0.23776745508694166
+        ],
+        "log_loss_interval_95": [
+          0.5520129100146242,
+          0.7014363423686509
+        ]
+      }
+    },
+    "weather_catboost": {
+      "winner": {
+        "races": 14,
+        "driver_predictions": 280,
+        "binary_log_loss": 0.1557930639715738,
+        "brier": 0.04346807396130277,
+        "top_k_recall": 0.21428571428571427,
+        "ece": 0.024253938164243198,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 244,
+            "mean_probability": 0.025193565356086384,
+            "observed_rate": 0.02049180327868852
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 20,
+            "mean_probability": 0.14105474918490948,
+            "observed_rate": 0.30000000000000004
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 8,
+            "mean_probability": 0.24330259712246405,
+            "observed_rate": 0.25
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 5,
+            "mean_probability": 0.3456068707710547,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 2,
+            "mean_probability": 0.41846644816402556,
+            "observed_rate": 0.5
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 1,
+            "mean_probability": 0.5202870422536954,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          }
+        ],
+        "brier_interval_95": [
+          0.037794097008534616,
+          0.04901630927958202
+        ],
+        "log_loss_interval_95": [
+          0.13038403141861016,
+          0.17914700066817252
+        ]
+      },
+      "podium": {
+        "races": 14,
+        "driver_predictions": 280,
+        "binary_log_loss": 0.3092079877135297,
+        "brier": 0.09604083739714422,
+        "top_k_recall": 0.5238095238095238,
+        "ece": 0.049476656851307324,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 172,
+            "mean_probability": 0.0356176625087529,
+            "observed_rate": 0.02325581395348837
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 36,
+            "mean_probability": 0.14511798443017102,
+            "observed_rate": 0.11111111111111112
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 23,
+            "mean_probability": 0.255146308820209,
+            "observed_rate": 0.30434782608695654
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 20,
+            "mean_probability": 0.3529426353031849,
+            "observed_rate": 0.55
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 6,
+            "mean_probability": 0.4651931024002521,
+            "observed_rate": 0.5
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 8,
+            "mean_probability": 0.5443614521858693,
+            "observed_rate": 0.75
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 10,
+            "mean_probability": 0.6459280472814097,
+            "observed_rate": 0.6000000000000001
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 2,
+            "mean_probability": 0.7442551967246566,
+            "observed_rate": 0.5
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 3,
+            "mean_probability": 0.8761519006426515,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          }
+        ],
+        "brier_interval_95": [
+          0.08482986151876475,
+          0.10798884039539434
+        ],
+        "log_loss_interval_95": [
+          0.27523757654640757,
+          0.35293068085531654
+        ]
+      },
+      "top10": {
+        "races": 14,
+        "driver_predictions": 280,
+        "binary_log_loss": 0.6218334377662526,
+        "brier": 0.20974174387640074,
+        "top_k_recall": 0.6642857142857143,
+        "ece": 0.08488362304346961,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 11,
+            "mean_probability": 0.08191367709054441,
+            "observed_rate": 0.27272727272727276
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 31,
+            "mean_probability": 0.1633169907851204,
+            "observed_rate": 0.25806451612903225
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 37,
+            "mean_probability": 0.24543021389106923,
+            "observed_rate": 0.37837837837837845
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 40,
+            "mean_probability": 0.34560857129280315,
+            "observed_rate": 0.325
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 31,
+            "mean_probability": 0.4464733980719797,
+            "observed_rate": 0.3548387096774193
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 25,
+            "mean_probability": 0.5494481478503314,
+            "observed_rate": 0.44
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 19,
+            "mean_probability": 0.6561913228745381,
+            "observed_rate": 0.47368421052631576
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 36,
+            "mean_probability": 0.7451041596083829,
+            "observed_rate": 0.7777777777777779
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 32,
+            "mean_probability": 0.8514921234908809,
+            "observed_rate": 0.8750000000000001
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 18,
+            "mean_probability": 0.9452694557370965,
+            "observed_rate": 0.8333333333333335
+          }
+        ],
+        "brier_interval_95": [
+          0.18894470744983885,
+          0.23410422562698274
+        ],
+        "log_loss_interval_95": [
+          0.5657744712629166,
+          0.6924617056675565
+        ]
+      }
+    },
+    "without_weather_catboost": {
+      "winner": {
+        "races": 14,
+        "driver_predictions": 280,
+        "binary_log_loss": 0.1557701674654606,
+        "brier": 0.044303636665436345,
+        "top_k_recall": 0.14285714285714285,
+        "ece": 0.02080023373914713,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 244,
+            "mean_probability": 0.02210207905946859,
+            "observed_rate": 0.02049180327868852
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 12,
+            "mean_probability": 0.13038882124697485,
+            "observed_rate": 0.25
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 15,
+            "mean_probability": 0.23488676143704695,
+            "observed_rate": 0.3333333333333333
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 7,
+            "mean_probability": 0.36177036666860063,
+            "observed_rate": 0.14285714285714285
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 1,
+            "mean_probability": 0.407402093125537,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 1,
+            "mean_probability": 0.57933077316452,
+            "observed_rate": 0.0
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 0,
+            "mean_probability": null,
+            "observed_rate": null
+          }
+        ],
+        "brier_interval_95": [
+          0.03856984255999545,
+          0.049806731101603795
+        ],
+        "log_loss_interval_95": [
+          0.13242099045929537,
+          0.17839575641469352
+        ]
+      },
+      "podium": {
+        "races": 14,
+        "driver_predictions": 280,
+        "binary_log_loss": 0.31096039915657975,
+        "brier": 0.09714554972959942,
+        "top_k_recall": 0.5238095238095237,
+        "ece": 0.056626920589125516,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 175,
+            "mean_probability": 0.03617863665925351,
+            "observed_rate": 0.022857142857142857
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 35,
+            "mean_probability": 0.13909979050640348,
+            "observed_rate": 0.11428571428571428
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 17,
+            "mean_probability": 0.2438741343541427,
+            "observed_rate": 0.411764705882353
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 20,
+            "mean_probability": 0.35358726002892216,
+            "observed_rate": 0.4000000000000001
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 10,
+            "mean_probability": 0.4606992159671018,
+            "observed_rate": 0.7000000000000001
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 12,
+            "mean_probability": 0.5422581671585636,
+            "observed_rate": 0.6666666666666667
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 4,
+            "mean_probability": 0.6567774481322887,
+            "observed_rate": 0.25
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 1,
+            "mean_probability": 0.7405354673497765,
+            "observed_rate": 1.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 5,
+            "mean_probability": 0.8348868300814818,
+            "observed_rate": 0.4
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 1,
+            "mean_probability": 0.9264708564475188,
+            "observed_rate": 0.0
+          }
+        ],
+        "brier_interval_95": [
+          0.08628424507989847,
+          0.10954212260658511
+        ],
+        "log_loss_interval_95": [
+          0.2756021192176126,
+          0.35495612323060916
+        ]
+      },
+      "top10": {
+        "races": 14,
+        "driver_predictions": 280,
+        "binary_log_loss": 0.6221236964831715,
+        "brier": 0.2096308408957375,
+        "top_k_recall": 0.6642857142857143,
+        "ece": 0.0845812202919606,
+        "reliability": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "n": 12,
+            "mean_probability": 0.07678313410413753,
+            "observed_rate": 0.25
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "n": 20,
+            "mean_probability": 0.15804857972070843,
+            "observed_rate": 0.35000000000000003
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "n": 52,
+            "mean_probability": 0.2562026059098797,
+            "observed_rate": 0.326923076923077
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "n": 42,
+            "mean_probability": 0.3422399269472672,
+            "observed_rate": 0.3095238095238096
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 19,
+            "mean_probability": 0.4410882959239606,
+            "observed_rate": 0.368421052631579
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 22,
+            "mean_probability": 0.5441570332039978,
+            "observed_rate": 0.3636363636363637
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 33,
+            "mean_probability": 0.643215537654819,
+            "observed_rate": 0.5454545454545454
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 32,
+            "mean_probability": 0.7504183429956857,
+            "observed_rate": 0.71875
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 28,
+            "mean_probability": 0.8483473017195694,
+            "observed_rate": 0.9285714285714286
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 20,
+            "mean_probability": 0.9437830918787544,
+            "observed_rate": 0.9000000000000001
+          }
+        ],
+        "brier_interval_95": [
+          0.1912575200807299,
+          0.23290390896677562
+        ],
+        "log_loss_interval_95": [
+          0.5680748258006483,
+          0.6951355718061867
+        ]
+      }
+    }
+  },
+  "base_winner_version": "practice-fp1-v1-0fa3e3e8-20261019T130104",
+  "base_outcomes_manifest_sha256": "a84d77a5e5181536ef4ac51da11384a2564d198dd66bb5286636b455c46dcda8",
+  "dataset_path": "data/processed/conditions/fp1-features.csv",
+  "dataset_sha256": "75caf8f5e3bfed0b02d357e435dc434cbf1fb97662da3949f9ebc1f2064d4473",
+  "splits": {
+    "train": 74,
+    "validation": 15,
+    "benchmark": 14
+  },
+  "train_seasons": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "race_ids": {
+    "train": [
+      "2019-01",
+      "2019-02",
+      "2019-07",
+      "2019-08",
+      "2019-09",
+      "2019-10",
+      "2019-11",
+      "2019-12",
+      "2019-13",
+      "2019-14",
+      "2019-17",
+      "2019-20",
+      "2019-21",
+      "2020-02",
+      "2020-03",
+      "2020-04",
+      "2020-05",
+      "2020-06",
+      "2020-07",
+      "2020-08",
+      "2020-09",
+      "2020-10",
+      "2020-12",
+      "2020-13",
+      "2020-14",
+      "2020-15",
+      "2020-16",
+      "2020-17",
+      "2021-01",
+      "2021-02",
+      "2021-03",
+      "2021-04",
+      "2021-06",
+      "2021-07",
+      "2021-08",
+      "2021-09",
+      "2021-11",
+      "2021-12",
+      "2021-13",
+      "2021-15",
+      "2021-16",
+      "2021-17",
+      "2021-18",
+      "2021-20",
+      "2021-21",
+      "2021-22",
+      "2022-01",
+      "2022-02",
+      "2022-03",
+      "2022-05",
+      "2022-06",
+      "2022-07",
+      "2022-08",
+      "2022-09",
+      "2022-12",
+      "2022-13",
+      "2022-14",
+      "2022-15",
+      "2022-16",
+      "2022-17",
+      "2022-18",
+      "2022-19",
+      "2022-20",
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-10",
+      "2023-14",
+      "2023-15",
+      "2023-16",
+      "2023-19"
+    ],
+    "validation": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-07",
+      "2024-08",
+      "2024-10",
+      "2024-12",
+      "2024-13",
+      "2024-14",
+      "2024-15",
+      "2024-16",
+      "2024-17",
+      "2024-18",
+      "2024-20",
+      "2024-24"
+    ],
+    "benchmark": [
+      "2025-01",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-07",
+      "2025-08",
+      "2025-10",
+      "2025-11",
+      "2025-12",
+      "2025-14",
+      "2025-15",
+      "2025-17",
+      "2025-18",
+      "2025-22"
+    ]
+  },
+  "notice": "Experimental fixed 72h-lead JMA weather plus prior nonfinish/circuit conditions. Historical weather publication is estimated with 6h release allowance. 2025 is a previously inspected development benchmark. No new source-shift certification. Unsupported stages or missing weather retain existing predictions."
+}

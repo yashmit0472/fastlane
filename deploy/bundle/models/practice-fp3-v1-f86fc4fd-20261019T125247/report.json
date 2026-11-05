@@ -1,0 +1,517 @@
+{
+  "status": "backtested",
+  "stage": "FP3",
+  "feature_version": "practice-history-v1",
+  "model_version": "practice-fp3-v1-f86fc4fd-20261019T125247",
+  "created_at": "2026-10-19T12:52:47.424918+00:00",
+  "training_window": "2018\u20132023 (100 races)",
+  "validation_window": "2024\u20132024 (16 races)",
+  "test_window": "2025\u20132025 (18 races)",
+  "trained_until": "2024-12-08T13:00:00+00:00",
+  "trained_until_policy": "Includes validation used for early stopping, selection and temperature fitting.",
+  "selected_model": "catboost",
+  "selection_rule": "lowest validation race log loss across all five candidates; never test selection",
+  "uses_practice": true,
+  "metrics": {
+    "uniform_baseline": {
+      "log_loss": 2.9928826460880154,
+      "brier": 0.9498538011695903,
+      "top1_accuracy": 0.05014619883040936,
+      "races": 18
+    },
+    "practice_pace_baseline": {
+      "log_loss": 2.488299831024537,
+      "brier": 0.8221878334890824,
+      "top1_accuracy": 0.2222222222222222,
+      "races": 18
+    },
+    "history_logistic": {
+      "log_loss": 2.299055825423838,
+      "brier": 0.8695812354859427,
+      "top1_accuracy": 0.2777777777777778,
+      "races": 18
+    },
+    "logistic": {
+      "log_loss": 2.861486808874842,
+      "brier": 0.865141616666889,
+      "top1_accuracy": 0.16666666666666666,
+      "races": 18
+    },
+    "catboost": {
+      "log_loss": 1.6749827595558753,
+      "brier": 0.7740216473161667,
+      "top1_accuracy": 0.2222222222222222,
+      "races": 18
+    }
+  },
+  "validation_metrics": {
+    "uniform_baseline": {
+      "log_loss": 2.9925264426547686,
+      "brier": 0.9498355263157892,
+      "top1_accuracy": 0.05016447368421053,
+      "races": 16
+    },
+    "practice_pace_baseline": {
+      "log_loss": 2.307303849355873,
+      "brier": 0.7652499573994653,
+      "top1_accuracy": 0.4375,
+      "races": 16
+    },
+    "history_logistic": {
+      "log_loss": 2.0165502702389904,
+      "brier": 0.754772748363032,
+      "top1_accuracy": 0.375,
+      "races": 16
+    },
+    "logistic": {
+      "log_loss": 2.0277835961796136,
+      "brier": 0.7931466562786547,
+      "top1_accuracy": 0.3125,
+      "races": 16
+    },
+    "catboost": {
+      "log_loss": 1.7611333700295793,
+      "brier": 0.7092726953708459,
+      "top1_accuracy": 0.4375,
+      "races": 16
+    }
+  },
+  "temperatures": {
+    "uniform_baseline": 0.25,
+    "practice_pace_baseline": 1.0,
+    "history_logistic": 1.3195079107728946,
+    "logistic": 1.5157165665103984,
+    "catboost": 1.0717734625362934
+  },
+  "reliability": {
+    "uniform_baseline": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "n": 359,
+        "mean_probability": 0.05013927576601671,
+        "observed_win_rate": 0.05013927576601671
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      }
+    ],
+    "practice_pace_baseline": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "n": 311,
+        "mean_probability": 0.024151720317890892,
+        "observed_win_rate": 0.01607717041800643
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "n": 27,
+        "mean_probability": 0.14523973101245063,
+        "observed_win_rate": 0.25925925925925924
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "n": 13,
+        "mean_probability": 0.26520640253294137,
+        "observed_win_rate": 0.38461538461538464
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "n": 5,
+        "mean_probability": 0.33425728348973355,
+        "observed_win_rate": 0.0
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "n": 2,
+        "mean_probability": 0.4495863301405846,
+        "observed_win_rate": 0.5
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "n": 1,
+        "mean_probability": 0.5491999331416899,
+        "observed_win_rate": 0.0
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      }
+    ],
+    "history_logistic": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "n": 305,
+        "mean_probability": 0.022411873298452505,
+        "observed_win_rate": 0.029508196721311476
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "n": 35,
+        "mean_probability": 0.1430790606272515,
+        "observed_win_rate": 0.11428571428571428
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "n": 10,
+        "mean_probability": 0.25366543028772326,
+        "observed_win_rate": 0.3
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "n": 5,
+        "mean_probability": 0.34158195908795574,
+        "observed_win_rate": 0.0
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "n": 2,
+        "mean_probability": 0.4304610151080003,
+        "observed_win_rate": 0.5
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "n": 2,
+        "mean_probability": 0.525562696742585,
+        "observed_win_rate": 0.5
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      }
+    ],
+    "logistic": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "n": 308,
+        "mean_probability": 0.02611989153898011,
+        "observed_win_rate": 0.02922077922077922
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "n": 26,
+        "mean_probability": 0.14153380229446139,
+        "observed_win_rate": 0.19230769230769232
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "n": 21,
+        "mean_probability": 0.23393581836175534,
+        "observed_win_rate": 0.09523809523809523
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "n": 4,
+        "mean_probability": 0.340635590185317,
+        "observed_win_rate": 0.5
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      }
+    ],
+    "catboost": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "n": 313,
+        "mean_probability": 0.018384017209538646,
+        "observed_win_rate": 0.009584664536741214
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "n": 18,
+        "mean_probability": 0.14841278976152164,
+        "observed_win_rate": 0.2777777777777778
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "n": 14,
+        "mean_probability": 0.24372853667719105,
+        "observed_win_rate": 0.5
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "n": 7,
+        "mean_probability": 0.35649138583352713,
+        "observed_win_rate": 0.0
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "n": 2,
+        "mean_probability": 0.44998039416588054,
+        "observed_win_rate": 0.0
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "n": 4,
+        "mean_probability": 0.5399931834054773,
+        "observed_win_rate": 0.5
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "n": 1,
+        "mean_probability": 0.6067996614379794,
+        "observed_win_rate": 1.0
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "n": 0,
+        "mean_probability": null,
+        "observed_win_rate": null
+      }
+    ]
+  },
+  "features": [
+    "recent_finish",
+    "recent_win_rate",
+    "team_recent_finish",
+    "team_recent_win_rate",
+    "driver_circuit_win_rate",
+    "team_circuit_win_rate",
+    "driver_prior_starts",
+    "fp1_best_gap_pct",
+    "fp1_median_gap_pct",
+    "fp1_log_laps",
+    "fp1_lap_iqr_pct",
+    "fp1_teammate_gap_pct",
+    "fp1_soft_fraction",
+    "fp1_mean_tyre_age",
+    "fp1_long_run_gap_pct",
+    "fp1_long_run_laps",
+    "fp1_available",
+    "fp2_best_gap_pct",
+    "fp2_median_gap_pct",
+    "fp2_log_laps",
+    "fp2_lap_iqr_pct",
+    "fp2_teammate_gap_pct",
+    "fp2_soft_fraction",
+    "fp2_mean_tyre_age",
+    "fp2_long_run_gap_pct",
+    "fp2_long_run_laps",
+    "fp2_available",
+    "fp3_best_gap_pct",
+    "fp3_median_gap_pct",
+    "fp3_log_laps",
+    "fp3_lap_iqr_pct",
+    "fp3_teammate_gap_pct",
+    "fp3_soft_fraction",
+    "fp3_mean_tyre_age",
+    "fp3_long_run_gap_pct",
+    "fp3_long_run_laps",
+    "fp3_available",
+    "driver_id",
+    "constructor_id",
+    "circuit_id"
+  ],
+  "dataset_sha256": "f86fc4fdb38bd06a4097a9a99e7c162550b958e81deaf5d212d9339c238df834",
+  "seed": 42,
+  "minimum_field_coverage": 0.7,
+  "historical_availability_audited": false,
+  "sprint_supported": false,
+  "top1_tie_policy": "fractional credit among equal-probability leaders; independent of result-row order",
+  "notice": "Experimental practice-stage backtest. Historical publication cutoffs estimated; retrospective confirmed rosters. 2025 is a development benchmark previously inspected for qualifying. Long-run proxy is not fuel-adjusted.",
+  "source_manifest_sha256": "3dc71c6ad7ff591101a013b4cd0e5734deb8c87b53cf394f2e9a100a57d036ca",
+  "coverage": {
+    "races": 134,
+    "rows": 2678,
+    "seasons": {
+      "2018": 20,
+      "2019": 14,
+      "2020": 14,
+      "2021": 18,
+      "2022": 19,
+      "2023": 15,
+      "2024": 16,
+      "2025": 18
+    }
+  },
+  "artifact_sha256": {
+    "history_logistic.pkl": "9c0b6874214325e59a118b6c93a7884f2e42c6cc7326b952b25692bbabfd329c",
+    "logistic.pkl": "bb511b2774e5ad2bd1f55c8401dd4a7db3e0210bf28ca20f996980f9169716ac",
+    "model.cbm": "70a40a593a6c6e23247f699cf1765a09dd482934d43f78290bb219aa32b91fe1"
+  }
+}

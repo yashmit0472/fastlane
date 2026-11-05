@@ -1,0 +1,20 @@
+'use client';
+import Link from 'next/link';
+import {useState} from 'react';
+import {ChevronDown,ArrowDown} from 'lucide-react';
+import type {Prediction,Driver} from '@/lib/types';
+type Metric='probability'|'podium_probability'|'top10_probability';
+const columns:{key:Metric;label:string}[]=[{key:'probability',label:'Winner'},{key:'podium_probability',label:'Podium'},{key:'top10_probability',label:'Top 10'}];
+export function ForecastTable({prediction,compact=false}:{prediction:Prediction;compact?:boolean}){
+  const [expanded,setExpanded]=useState(false),[sort,setSort]=useState<Metric>('probability'),[search,setSearch]=useState('');
+  const sorted=[...prediction.drivers].sort((a,b)=>(b[sort]??-1)-(a[sort]??-1));
+  const matching=sorted.filter(d=>(d.name+' '+d.team+' '+d.abbreviation).toLowerCase().includes(search.toLowerCase()));
+  const drivers=compact&&!expanded&&!search?matching.slice(0,5):matching;
+  const hasOutcomes=prediction.drivers.every(d=>d.podium_probability!=null&&d.top10_probability!=null);
+  const percent=(d:Driver,key:Metric)=>d[key]==null?'—':`${(d[key]!*100).toFixed(1)}%`;
+  return <><div className="forecast-tools"><label className="control-label sr-only" htmlFor={`driver-search-${prediction.cutoff}`}>Find a driver</label><input id={`driver-search-${prediction.cutoff}`} type="search" placeholder="Find a driver or team" value={search} onChange={e=>setSearch(e.target.value)} aria-label="Find a driver"/><label className="control-label mobile-sort">Rank by <select value={sort} onChange={e=>setSort(e.target.value as Metric)}>{columns.map(c=><option key={c.key} value={c.key} disabled={c.key!=='probability'&&!hasOutcomes}>{c.label}</option>)}</select></label></div>
+    <div className="table-scroll forecast-desktop"><table className="forecast-table"><caption className="sr-only">Driver probabilities, sorted by {columns.find(c=>c.key===sort)?.label}. Snapshot {prediction.cutoff}.</caption><thead><tr><th scope="col">Driver / team</th><th scope="col" className="grid-cell" title="Qualifying position before subsequent grid penalties">Quali.</th>{columns.map(c=><th scope="col" key={c.key} aria-sort={sort===c.key?'descending':'none'}><button disabled={c.key!=='probability'&&!hasOutcomes} onClick={()=>setSort(c.key)} className={sort===c.key?'sort-active':''}>{c.label}{sort===c.key&&<ArrowDown size={12}/>}</button></th>)}</tr></thead><tbody>{drivers.map(d=><tr key={d.driver_id}><td><Link className="driver-cell" href={`/drivers/${d.driver_id}`}><span className="rank">{sorted.indexOf(d)+1}</span><span className="team-stripe" style={{background:d.color}}/><span><strong>{d.name}</strong><small>{d.team}</small></span></Link></td><td className="grid-cell muted">{d.grid?`P${d.grid}`:'—'}</td>{columns.map(c=><td className={sort===c.key?'prob-cell selected-prob':'prob-cell'} key={c.key}><strong>{percent(d,c.key)}</strong><div className="prob-mini"><span style={{width:`${(d[c.key]??0)*100}%`,background:sort===c.key?'var(--red)':'#9ba6b5'}}/></div></td>)}</tr>)}</tbody></table></div>
+    <div className="forecast-mobile">{drivers.map(d=><article className="driver-prob-card" key={d.driver_id}><Link className="driver-cell" href={`/drivers/${d.driver_id}`}><span className="rank">{sorted.indexOf(d)+1}</span><span className="team-stripe" style={{background:d.color}}/><span><strong>{d.name}</strong><small>{d.team}{d.grid?` · Qualifying P${d.grid}`:''}</small></span></Link><dl>{columns.map(c=><div key={c.key}><dt>{c.label}</dt><dd className={sort===c.key?'red':''}>{percent(d,c.key)}</dd></div>)}</dl></article>)}</div>
+    {!drivers.length&&<p className="insight-copy">No drivers match this search.</p>}{compact&&!search&&<button className="expand-button" onClick={()=>setExpanded(!expanded)}>{expanded?'Show top 5':`View all ${prediction.drivers.length} drivers`}<ChevronDown size={15}/></button>}
+    <div className="table-note"><span>{hasOutcomes?'Full-field totals before rounding: winner 100% · podium 300% · top 10 1,000%.':'Podium and top-10 estimates are unavailable for this snapshot.'}</span><span>Experimental estimates</span></div></>;
+}

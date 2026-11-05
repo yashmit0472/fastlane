@@ -1,0 +1,10 @@
+{
+  "schema": "qualifying-bundle-v1",
+  "report": "ml/artifacts/qual-v2-1cf9fc78-20261024T150228/report.json",
+  "sha256": "5ea6f6304da4b076ff3bb01868f6dbfe1dd2267610e72d3235cfed9acd60c03b",
+  "artifacts": {
+    "logistic.pkl": "5014cccf0f511aa81007afc480676e1f7083a88f72b4971b89c921b9b07a1a9d",
+    "model.cbm": "428f20d7664a710d8b16eaa2405b2f7fd78c829a0775a88ee2ba03f84baa7c34"
+  },
+  "model_version": "qual-v2-1cf9fc78-20261024T150228"
+}

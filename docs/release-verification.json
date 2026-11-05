@@ -1,0 +1,73 @@
+{
+  "verified_at": "2026-10-26T11:23:59.774944+00:00",
+  "backend_tests": 93,
+  "production_build": "passed with TypeScript",
+  "standalone_typecheck": "passed on serial retry",
+  "real_data_http_checks": "passed",
+  "demo_routes": "rejected",
+  "original_model_inference_audit": "passed again on final running build",
+  "linux_training_probe": "passed",
+  "linux_qualifying_retraining": {
+    "candidate": "qual-v2-1cf9fc78-20261026T110257",
+    "selected": "catboost",
+    "development_race_log_loss": 0.8743503264593672,
+    "grid_baseline_race_log_loss": 0.8944116696418972,
+    "activated": false
+  },
+  "postgresql_restore": {
+    "races": 24,
+    "snapshots": 1656,
+    "system_state": 1
+  },
+  "container_source_worker": "refresh and daily backup passed; readiness ok",
+  "local_backup_restore": {
+    "backup": "20261026T112213083998",
+    "races": 24,
+    "snapshots": 1658,
+    "system_state": 3
+  },
+  "limitations": [
+    "Public hosting, TLS and external notifications are not configured.",
+    "Only one completed prospective weekend is available; future predictive accuracy is unproven.",
+    "Final preview screenshots could not be exported after the browser tool stalled; desktop/mobile visual and interaction checks had passed."
+  ],
+  "final_local_readiness": {
+    "ready": true,
+    "blockers": [],
+    "warnings": [],
+    "last_source_check": "2026-10-26T11:24:25.336513+00:00",
+    "last_backup": "2026-10-26T11:22:16.349930+00:00"
+  },
+  "postgresql_restart_persistence": "passed after Docker engine recovery; restored prospective report cards survived restart",
+  "host_resource_note": "Docker engine restarted after local memory pressure; serial TypeScript and final production build passed.",
+  "ui_polish": {
+    "completed_local_date": "2026-10-29",
+    "verified_at": "2026-10-28T18:49:15.921210+00:00",
+    "production_build": "passed, including TypeScript",
+    "backend_regression_tests": 93,
+    "real_data_http_checks": "passed",
+    "worker_readiness": "ready, no blockers or warnings",
+    "desktop_visual_review": "hero and race spotlight inspected in Chrome",
+    "mobile_visual_review": "responsive hero, circuit spotlight and schedule inspected; no horizontal overflow at effective widths 434 and 389 CSS pixels",
+    "browser_interactions": [
+      "Q schedule selection updates pressed state and session note",
+      "Circuit pause control changes animationPlayState to paused",
+      "Mobile navigation opens; Escape closes and restores focus",
+      "Real driver search filters to Max Verstappen",
+      "Podium sorting places the highest podium probability first"
+    ],
+    "browser_console_errors": [],
+    "new_runtime_dependencies": [],
+    "model_weights_changed": false,
+    "screenshot_export": "Browser tooling stalled after successful visual and interaction checks; export unavailable. Temporary viewport was reset."
+  },
+  "race_window_fix": {
+    "local_date": "2026-11-02",
+    "report": "docs/mexico-race-window-fix.json",
+    "tests": 101,
+    "production_build": "passed",
+    "current_race": "2026-19",
+    "next_race": "2026-20",
+    "source_recovery": "retrying; no retrospective forecasts created"
+  }
+}

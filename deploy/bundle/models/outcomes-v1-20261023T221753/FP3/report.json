@@ -1,0 +1,117 @@
+{
+  "schema": "race-outcomes-v1",
+  "stage": "FP3",
+  "model_version": "outcomes-v1-20261023T221753-FP3",
+  "created_at": "2026-10-23T22:18:28.010976+00:00",
+  "trained_until": "2024-12-08T13:00:00+00:00",
+  "features": [
+    "recent_finish",
+    "recent_win_rate",
+    "team_recent_finish",
+    "team_recent_win_rate",
+    "driver_circuit_win_rate",
+    "team_circuit_win_rate",
+    "driver_prior_starts",
+    "fp1_best_gap_pct",
+    "fp1_median_gap_pct",
+    "fp1_log_laps",
+    "fp1_lap_iqr_pct",
+    "fp1_teammate_gap_pct",
+    "fp1_soft_fraction",
+    "fp1_mean_tyre_age",
+    "fp1_long_run_gap_pct",
+    "fp1_long_run_laps",
+    "fp1_available",
+    "fp2_best_gap_pct",
+    "fp2_median_gap_pct",
+    "fp2_log_laps",
+    "fp2_lap_iqr_pct",
+    "fp2_teammate_gap_pct",
+    "fp2_soft_fraction",
+    "fp2_mean_tyre_age",
+    "fp2_long_run_gap_pct",
+    "fp2_long_run_laps",
+    "fp2_available",
+    "fp3_best_gap_pct",
+    "fp3_median_gap_pct",
+    "fp3_log_laps",
+    "fp3_lap_iqr_pct",
+    "fp3_teammate_gap_pct",
+    "fp3_soft_fraction",
+    "fp3_mean_tyre_age",
+    "fp3_long_run_gap_pct",
+    "fp3_long_run_laps",
+    "fp3_available",
+    "driver_id",
+    "constructor_id",
+    "circuit_id"
+  ],
+  "winner_model_version": "practice-fp3-v1-8721abbc-20261019T130122",
+  "dataset_sha256": "8721abbcf613fd74dd419934b30082de4c4416623b2d1a2a89ab3741f90367a1",
+  "targets": {
+    "podium": {
+      "selected_model": "logistic",
+      "validation": {
+        "logistic": {
+          "binary_log_loss": 0.29008191634428365,
+          "brier": 0.09519449763949459,
+          "races": 16
+        },
+        "uniform": {
+          "binary_log_loss": 0.362717105134694,
+          "brier": 0.10926759309073511,
+          "races": 16
+        }
+      },
+      "test": {
+        "logistic": {
+          "binary_log_loss": 0.29034983076386484,
+          "brier": 0.0928413085534015,
+          "races": 17
+        },
+        "uniform": {
+          "binary_log_loss": 0.3455073397881604,
+          "brier": 0.10348814516046148,
+          "races": 17
+        }
+      }
+    },
+    "top10": {
+      "selected_model": "logistic",
+      "validation": {
+        "logistic": {
+          "binary_log_loss": 0.49224684512536365,
+          "brier": 0.15451363343802102,
+          "races": 16
+        },
+        "uniform": {
+          "binary_log_loss": 0.6067076976764034,
+          "brier": 0.20604101604870695,
+          "races": 16
+        }
+      },
+      "test": {
+        "logistic": {
+          "binary_log_loss": 0.5798805295799233,
+          "brier": 0.19118618691669406,
+          "races": 17
+        },
+        "uniform": {
+          "binary_log_loss": 0.6145890357250345,
+          "brier": 0.21190253483312518,
+          "races": 17
+        }
+      }
+    }
+  },
+  "artifacts": {
+    "podium.pkl": "9b2ca8cf2ef7e25675fe1afd4d5314a53ad3776a02a5e6186341a92a455ccab6",
+    "top10.pkl": "22a9ffe31a0160355914cdfe75a756aa2b21bbdb62cf920ed7688066a3737bdb"
+  },
+  "splits": {
+    "train_races": 98,
+    "validation_races": 16,
+    "test_races": 17
+  },
+  "notice": "Experimental. Train 2018\u20132023, validation 2024, previously inspected development benchmark 2025. Labels are classified positions. Standard weekends only. Marginals constrained to nest and sum to 3 / 10; not a joint finishing-order distribution."
+}

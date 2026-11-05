@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {previousStage,probabilityChanges} from '../apps/web/lib/forecast-changes.ts';
+const p=(stage,cutoff,drivers)=>({stage,cutoff,drivers});
+const first=p('FP1','2026-10-23T19:00:00Z',[{driver_id:'a',name:'A',probability:.1}]);
+const revised=p('FP1','2026-10-23T20:00:00Z',[{driver_id:'a',name:'A',probability:.2}]);
+const second=p('FP2','2026-10-23T22:00:00Z',[{driver_id:'a',name:'A',probability:.3},{driver_id:'b',name:'B',probability:.1}]);
+const future=p('FP1','2026-10-24T23:00:00Z',[{driver_id:'a',probability:.9}]);
+assert.equal(previousStage([first,second,revised,future],second),revised);
+assert.equal(previousStage([first],first),undefined);
+const changes=probabilityChanges(second,revised,'probability');
+assert.equal(changes.length,1); assert.ok(Math.abs(changes[0].delta-10)<1e-8);
+assert.equal(probabilityChanges(second,revised,'podium_probability').length,0);
+console.log('Passed session-order, revision, new-entrant and missing-target checks.');

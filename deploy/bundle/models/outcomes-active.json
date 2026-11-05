@@ -1,0 +1,21 @@
+{
+  "schema": "race-outcomes-v1",
+  "stages": {
+    "FP1": {
+      "report": "ml/artifacts/outcomes-v1-20261024T150240/FP1/report.json",
+      "sha256": "df78c3b2c2ac1676cde6b31c8e2ca997c9f24207d2df7e3abeb8f1bf026b50b8"
+    },
+    "FP2": {
+      "report": "ml/artifacts/outcomes-v1-20261024T150240/FP2/report.json",
+      "sha256": "91876bb43a2a56a8def7611c7efc4299bb877759b4518b001f41bad6572f8a4d"
+    },
+    "FP3": {
+      "report": "ml/artifacts/outcomes-v1-20261024T150240/FP3/report.json",
+      "sha256": "8634ee69852bcd7c5a70de2d97c6de4400a00cc8613aa77846d17056b62b4371"
+    },
+    "Q": {
+      "report": "ml/artifacts/outcomes-v1-20261024T150240/Q/report.json",
+      "sha256": "db6f848f8aafa7fe602703153f2324e37de8e7a5360c25d8e667c60a714737d3"
+    }
+  }
+}

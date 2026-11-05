@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "created_at": "2026-10-26T11:25:40.375109+00:00",
+  "checks": [
+    "scripts.verify_practice_models",
+    "scripts.verify_outcome_models",
+    "scripts.verify_condition_models"
+  ],
+  "conditions": {
+    "FP1": {
+      "weather_enabled": false,
+      "model_version": "conditions-v1-20261025T071156-FP1",
+      "splits": {
+        "train": 74,
+        "validation": 15,
+        "benchmark": 14
+      }
+    },
+    "FP2": {
+      "weather_enabled": false,
+      "model_version": "conditions-v1-20261025T071156-FP2",
+      "splits": {
+        "train": 77,
+        "validation": 16,
+        "benchmark": 16
+      }
+    },
+    "FP3": {
+      "weather_enabled": true,
+      "model_version": "conditions-v1-20261025T071156-FP3",
+      "splits": {
+        "train": 75,
+        "validation": 15,
+        "benchmark": 16
+      }
+    },
+    "Q": {
+      "weather_enabled": false,
+      "model_version": "conditions-v1-20261025T071156-Q",
+      "splits": {
+        "train": 87,
+        "validation": 17,
+        "benchmark": 16
+      }
+    }
+  },
+  "notice": "Artifact/inference and selection-rule audit. No weights were changed. One scored prospective race cannot establish calibration or future accuracy."
+}
