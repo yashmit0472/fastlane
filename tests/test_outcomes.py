@@ -9,7 +9,7 @@ import pandas as pd
 from pydantic import ValidationError
 from apps.api.contracts import Forecast
 from ml.live.outcomes import constrained_marginals, attach_outcomes
-from ml.live.outcomes import ROOT, checksum
+from ml.live.outcomes import checksum
 from pathlib import Path
 from ml.training.outcomes import finishing_labels
 from ml.live.analytics import score_forecasts
@@ -64,7 +64,7 @@ class OutcomeTests(unittest.TestCase):
             self.assertIsNone(attach_outcomes(data['drivers'],pd.DataFrame(),'Q',datetime.now(timezone.utc)))
 
     def test_future_artifacts_version_mismatch_and_tampering(self):
-        with tempfile.TemporaryDirectory(dir=ROOT/'tmp') as directory:
+        with tempfile.TemporaryDirectory() as directory:
             root=Path(directory); artifact=root/'ml/artifacts/test'; artifact.mkdir(parents=True)
             report={'stage':'Q','schema':'race-outcomes-v1','model_version':'outcomes-test','winner_model_version':'winner-test',
                 'created_at':'2050-01-01T00:00:00+00:00','trained_until':'2039-01-01T00:00:00+00:00',

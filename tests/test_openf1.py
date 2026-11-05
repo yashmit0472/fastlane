@@ -7,7 +7,6 @@ from unittest.mock import patch
 from datetime import datetime,timedelta,timezone
 from ml.ingestion.openf1_sessions import match_session,filtered_summary
 from ml.live.refresh import practice_inputs_signature,load_practice
-from ml.ingestion.openf1_sessions import ROOT
 
 UTC=timezone.utc
 RAW={'season':'2026','round':'18','Circuit':{'Location':{'country':'USA'}},
@@ -36,7 +35,7 @@ def fixture():
 class OpenF1Tests(unittest.TestCase):
     def test_primary_import_failure_still_uses_free_fallback(self):
         data={'race_id':'2026-18','type':'FP1','source':'OpenF1','drivers':[{'driver_id':'a','best_lap_ms':90000}]}
-        with tempfile.TemporaryDirectory(dir=ROOT/'tmp') as directory,patch('ml.live.refresh.CACHE',Path(directory)),patch.dict('sys.modules',{'fastf1':None}),patch('ml.ingestion.openf1_sessions.load_practice',return_value=data) as fallback:
+        with tempfile.TemporaryDirectory() as directory,patch('ml.live.refresh.CACHE',Path(directory)),patch.dict('sys.modules',{'fastf1':None}),patch('ml.ingestion.openf1_sessions.load_practice',return_value=data) as fallback:
             result=load_practice(RAW,'FP1')
             fallback.assert_called_once(); self.assertEqual(result['source'],'OpenF1')
 
@@ -45,7 +44,7 @@ class OpenF1Tests(unittest.TestCase):
         cached={'race_id':'2026-18','type':'FP1','summary_version':'practice-stats-v1','source':'OpenF1',
             'quality_policy':'published-best-v2','observed_at':'2026-10-23T19:00:00+00:00',
             'drivers':[{'driver_id':'a','best_lap_ms':90000}]}
-        with tempfile.TemporaryDirectory(dir=ROOT/'tmp') as directory:
+        with tempfile.TemporaryDirectory() as directory:
             path=Path(directory)/'2026-18-FP1.json'; path.write_text(json.dumps(cached))
             with patch('ml.live.refresh.CACHE',Path(directory)),patch('ml.live.refresh.now_utc',return_value=NOW),patch('ml.ingestion.openf1_sessions.load_practice',side_effect=ValueError('upstream outage')) as source:
                 result=load_practice(raw,'FP1')
