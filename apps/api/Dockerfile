@@ -16,3 +16,4 @@ CMD ["python", "-m", "uvicorn", "apps.api.main:app", "--host", "0.0.0.0", "--por
 FROM runtime AS hosted
 COPY deploy/bundle/models/ /app/ml/artifacts/
 COPY deploy/bundle/history.json /app/data/processed/kaggle-2018-2025/history.json
+COPY deploy/bundle/supabase-root.crt /app/deploy/supabase-root.crt
