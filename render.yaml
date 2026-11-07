@@ -3,6 +3,7 @@ services:
     name: fastlane-api
     runtime: docker
     plan: free
+    region: singapore
     dockerfilePath: ./apps/api/Dockerfile
     dockerCommand: /bin/bash /app/scripts/render-service.sh
     healthCheckPath: /health
