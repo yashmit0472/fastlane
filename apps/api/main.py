@@ -48,6 +48,7 @@ def snapshot(entity_id, kind):
         raise HTTPException(404, "No real saved data available for this view")
 
 
+@app.head("/health", include_in_schema=False)
 @app.get("/health")
 def health():
     with SessionLocal() as db:
