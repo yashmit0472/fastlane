@@ -1,6 +1,7 @@
 import copy
 import unittest
 from datetime import datetime,timezone
+from ml.features.build import historical_prior
 from ml.live.analytics import practice_forecast,score_forecasts,circuit_summary
 from ml.live.refresh import schedule_sessions,qualifying_forecast,wait_for_next_check,archived_sessions
 
@@ -71,6 +72,24 @@ class LiveTests(unittest.TestCase):
         empty=score_forecasts([],classification,"2026-11-01T15:00:00Z")
         self.assertEqual(empty["forecasts"],[])
         self.assertIn("No pre-race forecast",empty["notice"])
+
+    def test_missing_starting_grid_keeps_finish_in_circuit_history(self):
+        race = {
+            "date": "2026-11-08",
+            "season": "2026",
+            "Circuit": {"circuitId": "interlagos"},
+            "Results": [
+                {"position": "1", "grid": None, "Driver": {"driverId": "a"}, "Constructor": {"constructorId": "t"}},
+                {"position": "2", "grid": "1", "Driver": {"driverId": "b"}, "Constructor": {"constructorId": "u"}},
+            ],
+        }
+        cutoff = datetime(2026, 11, 9, tzinfo=UTC)
+        summary = circuit_summary([race], "interlagos", cutoff)
+        self.assertEqual(summary["driver_history"][0]["driver_id"], "a")
+        self.assertEqual(summary["driver_history"][0]["wins"], 1)
+        self.assertEqual(summary["constructor_history"][0]["wins"], 1)
+        self.assertEqual([(row["grid_position"], row["starts"], row["wins"]) for row in summary["position_stats"]], [(1, 1, 0)])
+        self.assertEqual(historical_prior([race], "vegas", 1, cutoff), (1 / 21, 0))
 
     def test_calendar_does_not_invent_fp2_on_sprint_weekend(self):
         raw={"FirstPractice":{"date":"2026-10-23","time":"18:00:00Z"},"SprintQualifying":{"date":"2026-10-23","time":"21:00:00Z"},"Qualifying":{"date":"2026-10-24","time":"21:00:00Z"}}

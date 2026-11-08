@@ -18,7 +18,7 @@ def circuit_summary(history, circuit_id, cutoff, alpha=8):
     by_grid, drivers, teams = defaultdict(lambda: [0,0,0]), {}, {}
     for race in races:
         for result in race.get("Results", []):
-            pos, grid = int(result["position"]), int(result.get("grid",0))
+            pos, grid = int(result["position"]), int(result.get("grid") or 0)
             if grid > 0:
                 counts = by_grid[grid]
                 counts[0] += 1; counts[1] += pos == 1; counts[2] += pos <= 3

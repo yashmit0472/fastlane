@@ -45,7 +45,7 @@ def historical_prior(history, circuit_id, position, cutoff, alpha=8):
     local_w = local_n = global_w = global_n = 0
     for race in eligible:
         for result in race.get("Results", []):
-            if int(result.get("grid", 0)) != position:
+            if int(result.get("grid") or 0) != position:
                 continue
             winner = int(result["position"]) == 1
             global_n += 1
